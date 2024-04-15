@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LugaresUnicosCordoba | lugares</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -11,8 +17,8 @@
       <nav>
         <div class="menu-principal">
         <h1>
-            <img src="../img/logocordoba.avif" alt="Bandera Cordoba" /> YO
-            <img src="../img/icons8-me-gusta-48.png" alt="Corazon" /> CBA
+            <img src="../img/logocordoba.avif" alt="Bandera Cordoba" style="height: 60px; width: 70px;" /> YO
+            <img src="../img/icons8-me-gusta-48.png" alt="Corazon" style="height: 60px; width: 60px;"  /> CBA
         </h1>
         <div class="link">
           <a href="../index.html">Inicio</a>
@@ -24,12 +30,19 @@
       </div>
       </nav>
     </header>
-
+<main>
     <h2>Lugares unicos para visitar en Cordoba</h2>
+    <section class="container">
+      <div class="row">
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
     <section id="CaminodelasAltasCumbres">
       <ul>
         <li>
-          <h3>Camino de las altas Cumbres <a href="../html/videos.html#VideoAltasCumbres" ><img class="icons" src="../img/icons8-vídeo-50.png"></a></h3>
+
+          <h3>Camino de las altas Cumbres  <a href="../html/videos.html#VideoAltasCumbres" ><img class="icons" src="../img/icons8-vídeo-50.png"></a>           <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d345194.86348131817!2d-64.95699973683442!3d-31.610617347030058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d3d0b92164a87%3A0xc87d98311469f05c!2sCamino%20de%20las%20altas%20cumbres!5e0!3m2!1ses-419!2sar!4v1709214679342!5m2!1ses-419!2sar"
+          ></iframe> </h3>          
+          
           <p>
             El Camino de las Altas Cumbres, una ruta emblemática de la provincia
             de Córdoba, Argentina, se erige como un testimonio vivo de la
@@ -77,70 +90,44 @@
             donde cada curva y cada mirador nos recuerdan la grandeza y la
             belleza de la naturaleza que nos rodea.
           </p>
-          <div id="conteItemsCarrusel" >
-          <div class="itemCarrusel" id="itemCarrusel-1">
-          <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
-            <img src="../img/camino altas cumbres/Camino altas Cumbres.jpg" alt="">
+          <div id="carouselAltasCumbres" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/camino altas cumbres/Camino altas Cumbres.1.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/camino altas cumbres/Camino altas Cumbres.2.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/camino altas cumbres/Camino altas Cumbres.3.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item"> 
+                <img src="../img/camino altas cumbres/Camino altas Cumbres.4.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/camino altas cumbres/Camino altas Cumbres.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAltasCumbres" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAltasCumbres" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="flechasCarrusel"> 
-            <a href="#itemCarrusel-5"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-            <a href="#itemCarrusel-2"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-          </div>
-        </div>
-        <div class="itemCarrusel" id="itemCarrusel-2">
-          <div class="tarjetaCarrusel"  id="tarjetaCarrusel-2">
-            <img src="../img/camino altas cumbres/Camino altas Cumbres.1.jpg" alt="">
-          </div>
-          <div class="flechasCarrusel">
-            <a href="#itemCarrusel-1"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-            <a href="#itemCarrusel-3"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-          </div>
-        </div>
-        <div class="itemCarrusel" id="itemCarrusel-3">
-          <div class="tarjetaCarrusel"  id="tarjetaCarrusel-3">
-            <img src="../img/camino altas cumbres/Camino altas Cumbres.2.jpg" alt="">
-          </div>
-          <div class="flechasCarrusel">
-            <a href="#itemCarrusel-2"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-            <a href="#itemCarrusel-4"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-          </div>
-        </div>
-        <div class="itemCarrusel" id="itemCarrusel-4">
-          <div class="tarjetaCarrusel"  id="tarjetaCarrusel-4">
-            <img src="../img/camino altas cumbres/Camino altas Cumbres.3.jpg" alt="">
-          </div>
-          <div class="flechasCarrusel">
-            <a href="#itemCarrusel-3"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-            <a href="#itemCarrusel-5"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-          </div>
-        </div>
-        <div class="itemCarrusel" id="itemCarrusel-5">
-          <div class="tarjetaCarrusel"  id="tarjetaCarrusel-5">
-            <img src="../img/camino altas cumbres/Camino altas Cumbres.4.jpg" alt="">
-          </div>
-          <div class="flechasCarrusel">
-            <a href="#itemCarrusel-4"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-            <a href="#itemCarrusel-1"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-          </div>
-        </div>
-      </div>
-      <div id="contePuntos">
-        <a href="#itemCarrusel-1">*</a>
-        <a href="#itemCarrusel-2">*</a>
-        <a href="#itemCarrusel-3">*</a>
-        <a href="#itemCarrusel-4">*</a>
-        <a href="#itemCarrusel-5">*</a>
-      </div>
-        
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d345194.86348131817!2d-64.95699973683442!3d-31.610617347030058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d3d0b92164a87%3A0xc87d98311469f05c!2sCamino%20de%20las%20altas%20cumbres!5e0!3m2!1ses-419!2sar!4v1709214679342!5m2!1ses-419!2sar"
-          ></iframe>
+
         </li>
         </section>
-        <div class="conjunto">
+      </div>
+          <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
     <section id="CapilladelMonte">
         <li>
-          <h3>Capilla del Monte <a href="../html/videos.html#VideoCapilladelMonte"><img class="icons" src="../img/icons8-vídeo-50.png"></a></h3>
+        
+          <h3>Capilla del Monte <a href="../html/videos.html#VideoCapilladelMonte"><img class="icons" src="../img/icons8-vídeo-50.png"></a>          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54800.75809593876!2d-64.57340126952424!3d-30.85734844497533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d8d8977ba760d%3A0x6a90e69fd00b0cd7!2sCapilla%20del%20Monte%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1709298236885!5m2!1ses-419!2sar"
+          ></iframe></h3>
           <p>
             Enclavado en las majestuosas Sierras Chicas de la provincia de
             Córdoba, Argentina, se encuentra el encantador pueblo de Capilla del
@@ -189,68 +176,42 @@
             de este pueblo encantado, donde cada momento es una aventura y cada
             paisaje una obra maestra de la naturaleza.
           </p>
-          <div id="conteItemsCarrusel" >
-            <div class="itemCarrusel" id="itemCarrusel-6">
-            <div class="tarjetaCarrusel" id="tarjetaCarrusel-6">
-              <img src="../img/Capilla del Monte/Capilla del monte.jpg" alt="">
+          <div id="carouselCapilladelMonte" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/Capilla del Monte/Capilla del monte.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Capilla del Monte/cartel-en-la-base-del.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Capilla del Monte/Cima-del-Cerro-Uritorco-1.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item"> 
+                <img src="../img/Capilla del Monte/dique--capilla-del-monte--fotos.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Capilla del Monte/VCP-CerroUritorco-696x435.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
             </div>
-            <div class="flechasCarrusel"> 
-              <a href="#itemCarrusel-10"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-7"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCapilladelMonte" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCapilladelMonte" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="itemCarrusel" id="itemCarrusel-7">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-7">
-              <img src="../img/Capilla del Monte/cartel-en-la-base-del.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-6"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-8"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-8">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-8">
-              <img src="../img//Capilla del Monte/Cima-del-Cerro-Uritorco-1.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-7"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-9"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-9">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-9">
-              <img src="../img/Capilla del Monte/dique--capilla-del-monte--fotos.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-8"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-10"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-10">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-10">
-              <img src="../img/Capilla del Monte/VCP-CerroUritorco-696x435.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-9"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-6"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-        </div>
-        <div id="contePuntos">
-          <a href="#itemCarrusel-6">*</a>
-          <a href="#itemCarrusel-7">*</a>
-          <a href="#itemCarrusel-8">*</a>
-          <a href="#itemCarrusel-9">*</a>
-          <a href="#itemCarrusel-10">*</a>
-        </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54800.75809593876!2d-64.57340126952424!3d-30.85734844497533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d8d8977ba760d%3A0x6a90e69fd00b0cd7!2sCapilla%20del%20Monte%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1709298236885!5m2!1ses-419!2sar"
-          ></iframe>
         </li>
     </section>
+  </div>
+      <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
     <section id="CerroChampaqui">
         <li>
-          <h3>Cerro Champaqui <a href="../html/videos.html#VideoCerroChampaqui"><img class="icons" src="../img/icons8-vídeo-50.png"></a></h3>
+          <h3>Cerro Champaqui <a href="../html/videos.html#VideoCerroChampaqui"><img class="icons" src="../img/icons8-vídeo-50.png"></a>          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38284.01216770544!2d-64.95902880185412!3d-31.991794814909102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2d23c48bb2403%3A0x7cf2a17a5c7ba8d!2sCerro%20Champaqui!5e0!3m2!1ses-419!2sar!4v1709298714801!5m2!1ses-419!2sar"
+          ></iframe></h3>
           <p>
             Ubicado en la provincia de Córdoba, Argentina, el Cerro Champaquí se
             alza majestuoso como el pico más alto de las Sierras de Córdoba, con
@@ -300,69 +261,43 @@
             descubre la belleza indomable de este coloso de piedra, donde cada
             paso es una aventura y cada cumbre, una conquista.
           </p>
-          <div id="conteItemsCarrusel" >
-            <div class="itemCarrusel" id="itemCarrusel-11">
-            <div class="tarjetaCarrusel" id="tarjetaCarrusel-11">
-              <img src="../img/Cerro Champaqui/ARCHI_617891.jpg" alt="">
+          <div id="carouselCerroChampaqui" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/Cerro Champaqui/ARCHI_617891.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Cerro Champaqui/cerro champaqui.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Cerro Champaqui/images.jpeg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item"> 
+                <img src="../img/Cerro Champaqui/Jose-Luis-Altamirano-en-el-Cerro-Champaqui-nevada-del-16-de-junio..jpeg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Cerro Champaqui/Para-subirla-2-1024x682.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
             </div>
-            <div class="flechasCarrusel"> 
-              <a href="#itemCarrusel-15"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-12"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCerroChampaqui" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCerroChampaqui" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="itemCarrusel" id="itemCarrusel-12">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-12">
-              <img src="../img/Cerro Champaqui/cerro champaqui.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-11"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-13"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-13">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-13">
-              <img src="../img/Cerro Champaqui/images.jpeg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-12"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-14"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-14">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-14">
-              <img src="../img/Cerro Champaqui/Jose-Luis-Altamirano-en-el-Cerro-Champaqui-nevada-del-16-de-junio..jpeg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-13"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-15"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-15">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-15">
-              <img src="../img/Cerro Champaqui/Para-subirla-2-1024x682.jpg"alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-14"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-11"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-        </div>
-        <div id="contePuntos">
-          <a href="#itemCarrusel-11">*</a>
-          <a href="#itemCarrusel-12">*</a>
-          <a href="#itemCarrusel-13">*</a>
-          <a href="#itemCarrusel-14">*</a>
-          <a href="#itemCarrusel-15">*</a>
-        </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38284.01216770544!2d-64.95902880185412!3d-31.991794814909102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2d23c48bb2403%3A0x7cf2a17a5c7ba8d!2sCerro%20Champaqui!5e0!3m2!1ses-419!2sar!4v1709298714801!5m2!1ses-419!2sar"
 
-          ></iframe>
         </li>
     </section>
+  </div>
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
     <section id="CordobaCapital">
         <li>
-          <h3>Cordoba Capital <a href="../html/videos.html#VideoCordobaCapital"><img class="icons" src="../img/icons8-vídeo-50.png"></a></h3>
+          <h3>Cordoba Capital <a href="../html/videos.html#VideoCordobaCapital"><img class="icons" src="../img/icons8-vídeo-50.png"></a>          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.23899516!2d-64.27661394327242!3d-31.399280319293627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1709299027673!5m2!1ses-419!2sar"
+          ></iframe></h3>
           <p>
             Bienvenidos a la histórica y vibrante ciudad de Córdoba, el corazón
             cultural y educativo del centro de Argentina. Con una rica historia
@@ -413,68 +348,44 @@
             donde el pasado y el presente se entrelazan en un abrazo eterno, y
             donde cada calle, cada plaza y cada rincón cuentan una historia.
           </p>
-          <div id="conteItemsCarrusel" >
-            <div class="itemCarrusel" id="itemCarrusel-16">
-            <div class="tarjetaCarrusel" id="tarjetaCarrusel-16">
-              <img src="../img/Cordoba Capital/08003e9f0ed2d63e324ab5bcf905ad0c.jpg" alt="">
+          <div id="carouselCordobaCapital" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/Cordoba Capital/08003e9f0ed2d63e324ab5bcf905ad0c.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Cordoba Capital/cordoba capital.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Cordoba Capital/El-Paseo-del-Buen-Pastor.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item"> 
+                <img src="../img/Cordoba Capital/istockphoto-1004624644-612x612.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Cordoba Capital/provincia-de-crdoba-le-pedimos-chatgpt-nos-dijera-cual-era-mejor-provinica-para-vivir-981206-174252.jpeg" class="d-block w-75 h-0" alt="...">
+              </div>
             </div>
-            <div class="flechasCarrusel"> 
-              <a href="#itemCarrusel-20"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-17"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCordobaCapital" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCordobaCapital" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="itemCarrusel" id="itemCarrusel-17">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-17">
-              <img src="../img/Cordoba Capital/cordoba capital.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-16"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-18"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-18">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-18">
-              <img src="../img/Cordoba Capital/El-Paseo-del-Buen-Pastor.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-17"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-19"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-19">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-19">
-              <img src="../img/Cordoba Capital/istockphoto-1004624644-612x612.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-18"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-20"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-20">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-20">
-              <img src="../img/Cordoba Capital/provincia-de-crdoba-le-pedimos-chatgpt-nos-dijera-cual-era-mejor-provinica-para-vivir-981206-174252.jpeg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-19"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-16"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-        </div>
-        <div id="contePuntos">
-          <a href="#itemCarrusel-16">*</a>
-          <a href="#itemCarrusel-17">*</a>
-          <a href="#itemCarrusel-18">*</a>
-          <a href="#itemCarrusel-19">*</a>
-          <a href="#itemCarrusel-20">*</a>
-        </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.23899516!2d-64.27661394327242!3d-31.399280319293627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1709299027673!5m2!1ses-419!2sar"
-          ></iframe>
+
         </li>
     </section>
+  </div>
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
     <section id="LosGigantes">
         <li>
-          <h3>Los Gigantes <a href="../html/videos.html#VideoLosGigantes"><img class="icons" src="../img/icons8-vídeo-50.png"></a></h3>
+          <h3>Los Gigantes <a href="../html/videos.html#VideoLosGigantes"><img class="icons" src="../img/icons8-vídeo-50.png"></a>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13619.47260120879!2d-64.81641084709292!3d-31.417758576311975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d13d496490cdd%3A0x5c679c29b9334770!2sCerro%20Los%20Gigantes!5e0!3m2!1ses-419!2sar!4v1709299906418!5m2!1ses-419!2sar"
+            ></iframe></h3>
           <p>
             Bienvenidos a Los Gigantes, un lugar mágico y majestuoso ubicado en
             la provincia de Córdoba, Argentina. Con su imponente belleza natural
@@ -531,68 +442,42 @@
             una historia. Ven y descubre la magia de Los Gigantes, donde los
             sueños se hacen realidad y la aventura nunca termina.
           </p>
-          <div id="conteItemsCarrusel" >
-            <div class="itemCarrusel" id="itemCarrusel-21">
-            <div class="tarjetaCarrusel" id="tarjetaCarrusel-21">
-              <img src="../img/Los Gigantes/13b_31.jpg" alt="">
+          <div id="carouselLosGigantes" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/Los Gigantes/13b_31.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Los Gigantes/descarga.jpeg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Los Gigantes/DJI_0062.webp" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item"> 
+                <img src="../img/Los Gigantes/ESTrUMWXcAEhvuq.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Los Gigantes/Los Gigantes.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
             </div>
-            <div class="flechasCarrusel"> 
-              <a href="#itemCarrusel-25"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-22"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLosGigantes" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselLosGigantes" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="itemCarrusel" id="itemCarrusel-22">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-22">
-              <img src="../img/Los Gigantes/descarga.jpeg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-21"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-23"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-23">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-23">
-              <img src="../img/Los Gigantes/DJI_0062.webp" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-22"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-24"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-24">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-24">
-              <img src="../img/Los Gigantes/ESTrUMWXcAEhvuq.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-23"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-25"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-25">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-25">
-              <img src="../img/Los Gigantes/Los Gigantes.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-24"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-21"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-        </div>
-        <div id="contePuntos">
-          <a href="#itemCarrusel-21">*</a>
-          <a href="#itemCarrusel-22">*</a>
-          <a href="#itemCarrusel-23">*</a>
-          <a href="#itemCarrusel-24">*</a>
-          <a href="#itemCarrusel-25">*</a>
-        </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13619.47260120879!2d-64.81641084709292!3d-31.417758576311975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d13d496490cdd%3A0x5c679c29b9334770!2sCerro%20Los%20Gigantes!5e0!3m2!1ses-419!2sar!4v1709299906418!5m2!1ses-419!2sar"
-          ></iframe>
         </li>
     </section>
+  </div>
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
     <section id="MarChiquita">
         <li>
-          <h3>Mar Chiquita <a href="../html/videos.html#VideoMarChiquita"><img class="icons" src="../img/icons8-vídeo-50.png"></a></h3>
+          <h3>Mar Chiquita <a href="../html/videos.html#VideoMarChiquita"><img class="icons" src="../img/icons8-vídeo-50.png"></a>          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12619.706550977216!2d-57.43909464184533!3d-37.744865284250416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584cd1997758023%3A0x4f17c2507724aae9!2sMar%20Chiquita%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1709300186686!5m2!1ses-419!2sar"
+          ></iframe></h3>
           <p>
             Mar Chiquita, una joya escondida en la provincia de Córdoba,
             Argentina, es mucho más que un simple lago salado; es un santuario
@@ -642,68 +527,43 @@
             maravilla de Mar Chiquita, donde el tiempo se detiene y los sueños
             se hacen realidad.
           </p>
-          <div id="conteItemsCarrusel" >
-            <div class="itemCarrusel" id="itemCarrusel-26">
-            <div class="tarjetaCarrusel" id="tarjetaCarrusel-26">
-              <img src="../img/Laguna Mar Chiquita/5fa91ca0028e5.jpeg" alt="">
+          <div id="carouselMarChiquita" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/Laguna Mar Chiquita/5fa91ca0028e5.jpeg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Laguna Mar Chiquita/Ansenuza.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Laguna Mar Chiquita/gran-hotel-viena.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item"> 
+                <img src="../img/Laguna Mar Chiquita/Miramar-de-Ansenuza-Mar-Chiquita-Cordoba.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Laguna Mar Chiquita/turismo-miramar.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
             </div>
-            <div class="flechasCarrusel"> 
-              <a href="#itemCarrusel-30"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-27"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMarChiquita" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMarChiquita" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="itemCarrusel" id="itemCarrusel-27">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-27">
-              <img src="../img/Laguna Mar Chiquita/Ansenuza.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-26"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-28"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-28">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-28">
-              <img src="../img/Laguna Mar Chiquita/gran-hotel-viena.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-27"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-29"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-29">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-29">
-              <img src="../img/Laguna Mar Chiquita/Miramar-de-Ansenuza-Mar-Chiquita-Cordoba.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-28"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-30"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-30">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-30">
-              <img src="../img/Laguna Mar Chiquita/turismo-miramar.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-29"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-26"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-        </div>
-        <div id="contePuntos">
-          <a href="#itemCarrusel-26">*</a>
-          <a href="#itemCarrusel-27">*</a>
-          <a href="#itemCarrusel-28">*</a>
-          <a href="#itemCarrusel-29">*</a>
-          <a href="#itemCarrusel-30">*</a>
-        </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12619.706550977216!2d-57.43909464184533!3d-37.744865284250416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584cd1997758023%3A0x4f17c2507724aae9!2sMar%20Chiquita%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1709300186686!5m2!1ses-419!2sar"
-          ></iframe>
+
         </li>
     </section>
+  </div>
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
     <section id="PuebloEscondido">
         <li>
-          <h3>Pueblo Escondido <a href="../html/videos.html#VideoPuebloEscondido"><img class="icons" src="../img/icons8-vídeo-50.png"></a></h3>
+          <h3>Pueblo Escondido <a href="../html/videos.html#VideoPuebloEscondido"><img class="icons" src="../img/icons8-vídeo-50.png"></a>          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107801.80702844786!2d-64.97729367778908!3d-32.39754915767242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2efb444df0df5%3A0x2faee3d07ea6dbf6!2sPueblo%20Escondido!5e0!3m2!1ses-419!2sar!4v1709404264841!5m2!1ses-419!2sar"
+          ></iframe></h3>
           <p>
             Hoy es un yacimiento minero deshabitado con historia bélica y
             secretos de la vida asalariada en el corazón de la montaña, trabajos
@@ -735,65 +595,38 @@
             las salas de maquinaria, la molienda de minerales y las diferentes
             usinas generadoras de energía.
           </p>
-          <div id="conteItemsCarrusel" >
-            <div class="itemCarrusel" id="itemCarrusel-31">
-            <div class="tarjetaCarrusel" id="tarjetaCarrusel-31">
-              <img src="../img/Pueblo Escondido/50335742703_fc6994d9b4_k-2.jpg" alt="">
+          <div id="carouselPuebloEscondido" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/Pueblo Escondido/50335742703_fc6994d9b4_k-2.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Pueblo Escondido/descarga.jpeg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Pueblo Escondido/Pueblo Escondido.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item"> 
+                <img src="../img/Pueblo Escondido/PUEBLO ESCONDIDO_6.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Pueblo Escondido/unnamed.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
             </div>
-            <div class="flechasCarrusel"> 
-              <a href="#itemCarrusel-35"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-32"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPuebloEscondido" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPuebloEscondido" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="itemCarrusel" id="itemCarrusel-32">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-32">
-              <img src="../img/Pueblo Escondido/descarga.jpeg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-31"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-33"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-33">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-33">
-              <img src="../img/Pueblo Escondido/Pueblo Escondido.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-32"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-34"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-34">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-34">
-              <img src="../img/Pueblo Escondido/PUEBLO ESCONDIDO_6.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-33"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-35"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-35">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-35">
-              <img src="../img/Pueblo Escondido/unnamed.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-34"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-31"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-        </div>
-        <div id="contePuntos">
-          <a href="#itemCarrusel-31">*</a>
-          <a href="#itemCarrusel-32">*</a>
-          <a href="#itemCarrusel-33">*</a>
-          <a href="#itemCarrusel-34">*</a>
-          <a href="#itemCarrusel-35">*</a>
-        </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107801.80702844786!2d-64.97729367778908!3d-32.39754915767242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2efb444df0df5%3A0x2faee3d07ea6dbf6!2sPueblo%20Escondido!5e0!3m2!1ses-419!2sar!4v1709404264841!5m2!1ses-419!2sar"
-          ></iframe>
+
         </li>
     </section>
+  </div>
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
     <section id="RuinasJesuiticas">
         <li>
           <h3>Ruinas Jesuiticas <a href="../html/videos.html#VideoRuinasJesuiticas"><img class="icons" src="../img/icons8-vídeo-50.png"></a></h3>
@@ -852,60 +685,33 @@
             de conectar con el pasado y apreciar la riqueza y la diversidad de
             la región.
           </p>
-          <div id="conteItemsCarrusel" >
-            <div class="itemCarrusel" id="itemCarrusel-56">
-            <div class="tarjetaCarrusel" id="tarjetaCarrusel-56">
-              <img src="../img/Ruinas Jesuiticas/951302_202207061925290000001.jpg" alt="">
+          <div id="carouselRuinasJesuiticas" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/Ruinas Jesuiticas/951302_202207061925290000001.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Ruinas Jesuiticas/ALTA-GRACIA-JESUITAS.jpeg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Ruinas Jesuiticas/EoHQXcARK_1200x0__1.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item"> 
+                <img src="../img/Ruinas Jesuiticas/estancia-jesus-maria-1.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Ruinas Jesuiticas/Ruinas Jesuiticas.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
             </div>
-            <div class="flechasCarrusel"> 
-              <a href="#itemCarrusel-60"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-57"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselRuinasJesuiticas" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselRuinasJesuiticas" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="itemCarrusel" id="itemCarrusel-57">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-57">
-              <img src="../img/Ruinas Jesuiticas/ALTA-GRACIA-JESUITAS.jpeg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-56"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-58"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-58">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-58">
-              <img src="../img/Ruinas Jesuiticas/EoHQXcARK_1200x0__1.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-57"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-59"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-59">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-59">
-              <img src="../img/Ruinas Jesuiticas/estancia-jesus-maria-1.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-58"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-60"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-60">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-60">
-              <img src="../img/Ruinas Jesuiticas/Ruinas Jesuiticas.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-59"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-56"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-        </div>
-        <div id="contePuntos">
-          <a href="#itemCarrusel-56">*</a>
-          <a href="#itemCarrusel-57">*</a>
-          <a href="#itemCarrusel-58">*</a>
-          <a href="#itemCarrusel-59">*</a>
-          <a href="#itemCarrusel-60">*</a>
-        </div>
           <li>Estancia de Caroya <a href="https://goo.gl/maps/t9vg9ySLDEu7GWfY8"> (Ubicacion aqui)</a></li>
           <li>Estancia Jesus Maria <a href="https://goo.gl/maps/fYopCBYNcwPspAL2A"> (Ubicacion aqui)</a></li>
           <li>Estancia Santa Catalina <a href="https://goo.gl/maps/qEi9E9w5BmfLUBJf9"> (Ubicacion aqui)</a></li>
@@ -914,9 +720,12 @@
           <li>Manzana Jesuitica <a href="https://goo.gl/maps/FUPbc5tLG4zsvvNS9"> (Ubicacion aqui)</a></li>
         </li>
     </section>
+  </div>
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
     <section id="SalinasGrandes">
         <li>
-          <h3>Salinas Grandes <a href="../html/videos.html#VideoSalinasGrandes"><img class="icons" src="../img/icons8-vídeo-50.png"></a></h3>
+          <h3>Salinas Grandes <a href="../html/videos.html#VideoSalinasGrandes"><img class="icons" src="../img/icons8-vídeo-50.png"></a>            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110494.98953880508!2d-64.6986969!3d-30.066439599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942e3f4c0bd9f653%3A0x93773ea809a5376e!2sSalinas%20Grandes%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1709405152917!5m2!1ses-419!2sar"></iframe>
+          </h3>
           <p>Las Salinas Grandes de Córdoba, un tesoro natural y cultural, son un
              espectáculo único que cautiva a los visitantes con su vastedad y su 
              belleza deslumbrante. Situadas en el corazón de la provincia de Córdoba, 
@@ -956,66 +765,41 @@
             y proteger nuestro patrimonio natural. Al visitar las Salinas Grandes, los visitantes
              tienen la oportunidad de conectar con la tierra y con ellos mismos, y de experimentar 
              la magia y el misterio de este lugar único en el mundo.</p>
-             <div id="conteItemsCarrusel" >
-              <div class="itemCarrusel" id="itemCarrusel-36">
-              <div class="tarjetaCarrusel" id="tarjetaCarrusel-36">
-                <img src="../img/Salinas Grandes/551835_10151046059017869_1929698967_n.jpg" alt="">
+             <div id="carouselSalinasGrandes" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/Salinas Grandes/551835_10151046059017869_1929698967_n.jpg" class="d-block w-75 h-0" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/Salinas Grandes/ARCHI_860640.jpg" class="d-block w-75 h-0" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/Salinas Grandes/images.jpeg" class="d-block w-75 h-0" alt="...">
+                </div>
+                <div class="carousel-item"> 
+                  <img src="../img/Salinas Grandes/Salinas Grandes.jpg" class="d-block w-75 h-0" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/Salinas Grandes/salinas_grandes_5_0.jpg.webp" class="d-block w-75 h-0" alt="...">
+                </div>
               </div>
-              <div class="flechasCarrusel"> 
-                <a href="#itemCarrusel-40"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-37"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalinasGrandes" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselSalinasGrandes" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="itemCarrusel" id="itemCarrusel-37">
-              <div class="tarjetaCarrusel"  id="tarjetaCarrusel-37">
-                <img src="../img/Salinas Grandes/ARCHI_860640.jpg" alt="">
-              </div>
-              <div class="flechasCarrusel">
-                <a href="#itemCarrusel-36"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-38"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
-            </div>
-            <div class="itemCarrusel" id="itemCarrusel-38">
-              <div class="tarjetaCarrusel"  id="tarjetaCarrusel-38">
-                <img src="../img/Salinas Grandes/images.jpeg" alt="">
-              </div>
-              <div class="flechasCarrusel">
-                <a href="#itemCarrusel-37"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-39"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
-            </div>
-            <div class="itemCarrusel" id="itemCarrusel-39">
-              <div class="tarjetaCarrusel"  id="tarjetaCarrusel-39">
-                <img src="../img/Salinas Grandes/Salinas Grandes.jpg" alt="">
-              </div>
-              <div class="flechasCarrusel">
-                <a href="#itemCarrusel-38"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-40"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
-            </div>
-            <div class="itemCarrusel" id="itemCarrusel-40">
-              <div class="tarjetaCarrusel"  id="tarjetaCarrusel-40">
-                <img src="../img/Salinas Grandes/salinas_grandes_5_0.jpg.webp" alt="">
-              </div>
-              <div class="flechasCarrusel">
-                <a href="#itemCarrusel-39"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-36"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
-            </div>
-          </div>
-          <div id="contePuntos">
-            <a href="#itemCarrusel-36">*</a>
-            <a href="#itemCarrusel-37">*</a>
-            <a href="#itemCarrusel-38">*</a>
-            <a href="#itemCarrusel-39">*</a>
-            <a href="#itemCarrusel-40">*</a>
-          </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110494.98953880508!2d-64.6986969!3d-30.066439599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942e3f4c0bd9f653%3A0x93773ea809a5376e!2sSalinas%20Grandes%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1709405152917!5m2!1ses-419!2sar"></iframe>
         </li>
     </section>
+  </div>
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
     <section id="TunelesdeTaninga">
         <li>
-          <h3>Tuneles de Taninga <a href="../html/videos.html#VideoTunelesdeTaninga"><img class="icons" src="../img/icons8-vídeo-50.png"></a></h3>
+          <h3>Tuneles de Taninga <a href="../html/videos.html#VideoTunelesdeTaninga"><img class="icons" src="../img/icons8-vídeo-50.png"></a>            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.264517950828!2d-65.4000556!3d-31.379269099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942cf439c20fa9bb%3A0x2fac076e6726ce11!2zVMO6bmVsZXMgZGUgQ2hhbmNhbsOt!5e0!3m2!1ses-419!2sar!4v1709405659055!5m2!1ses-419!2sar"></iframe>
+          </h3>
           <p>Los Túneles de Taninga, una maravilla natural ubicada en la provincia de Córdoba, Argentina, son una atracción fascinante que cautiva a los visitantes con su historia intrigante y su belleza escénica. Estos túneles, también conocidos como los Túneles Caracoles, son una hazaña de ingeniería y un monumento a la perseverancia humana.
             La historia de los Túneles de Taninga se remonta a principios del siglo XX, cuando se construyeron como parte de un ambicioso proyecto vial para conectar las regiones de Traslasierra y el Valle de Punilla. Los túneles fueron excavados a mano por trabajadores dedicados, enfrentando desafíos naturales y obstáculos técnicos en su camino hacia la finalización de la obra.
             Los paisajes que rodean a los Túneles de Taninga son simplemente impresionantes. Situados en las estribaciones de las Sierras Grandes, ofrecen vistas panorámicas de montañas imponentes, valles verdes y cañones escarpados. El contraste entre la roca desnuda de las montañas y la vegetación exuberante crea un escenario de belleza natural indescriptible.
@@ -1024,66 +808,42 @@
             Las actividades que se pueden realizar en los Túneles de Taninga son variadas y emocionantes. Los aficionados al senderismo pueden explorar los senderos que serpentean a través de las montañas, mientras que los amantes del ciclismo pueden disfrutar de emocionantes recorridos por carretera. La observación de aves y la fotografía de naturaleza son otras actividades populares que permiten a los visitantes conectar con la vida silvestre y la belleza natural de la región.
             En cada estación del año, los Túneles de Taninga ofrecen una experiencia única. En primavera, las montañas se visten de verde y las flores silvestres salpican el paisaje con colores brillantes. En verano, el sol brilla con intensidad y los días son cálidos y luminosos. En otoño, los árboles se tiñen de tonos dorados y rojizos, creando un paisaje de ensueño. Y en invierno, la nieve cubre las cumbres de las montañas, creando un paisaje mágico y sereno.
             Los Túneles de Taninga son mucho más que una atracción turística; son un monumento a la perseverancia humana y un recordatorio de la belleza y la grandeza de la naturaleza. Al visitar este sitio impresionante, los viajeros tienen la oportunidad de conectar con la historia y la majestuosidad de las Sierras Grandes, dejándose llevar por la magia del paisaje y la aventura.</p>
-            <div id="conteItemsCarrusel" >
-              <div class="itemCarrusel" id="itemCarrusel-51">
-              <div class="tarjetaCarrusel" id="tarjetaCarrusel-51">
-                <img src="../img/Tuneles de Taninga/25688925.400x300.jpg" alt="">
+            <div id="carouselTunelesdeTaninga" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/Tuneles de Taninga/25688925.400x300.jpg" class="d-block w-75 h-0" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/Tuneles de Taninga/ARCHI_814275.jpg" class="d-block w-75 h-0" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/Tuneles de Taninga/Los-Tuneles-19.jpg" class="d-block w-75 h-0" alt="...">
+                </div>
+                <div class="carousel-item"> 
+                  <img src="../img/Tuneles de Taninga/tuneles taninga.jpg" class="d-block w-75 h-0" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/Tuneles de Taninga/tuneles-taninga-pintados.jpg" class="d-block w-75 h-0" alt="...">
+                </div>
               </div>
-              <div class="flechasCarrusel"> 
-                <a href="#itemCarrusel-55"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-52"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselTunelesdeTaninga" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselTunelesdeTaninga" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="itemCarrusel" id="itemCarrusel-52">
-              <div class="tarjetaCarrusel"  id="tarjetaCarrusel-52">
-                <img src="../img/Tuneles de Taninga/ARCHI_814275.jpg" alt="">
-              </div>
-              <div class="flechasCarrusel">
-                <a href="#itemCarrusel-51"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-53"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
-            </div>
-            <div class="itemCarrusel" id="itemCarrusel-53">
-              <div class="tarjetaCarrusel"  id="tarjetaCarrusel-53">
-                <img src="../img/Tuneles de Taninga/Los-Tuneles-19.jpg" alt="">
-              </div>
-              <div class="flechasCarrusel">
-                <a href="#itemCarrusel-52"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-54"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
-            </div>
-            <div class="itemCarrusel" id="itemCarrusel-54">
-              <div class="tarjetaCarrusel"  id="tarjetaCarrusel-54">
-                <img src="../img/Tuneles de Taninga/tuneles taninga.jpg" alt="">
-              </div>
-              <div class="flechasCarrusel">
-                <a href="#itemCarrusel-53"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-55"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
-            </div>
-            <div class="itemCarrusel" id="itemCarrusel-55">
-              <div class="tarjetaCarrusel"  id="tarjetaCarrusel-55">
-                <img src="../img/Tuneles de Taninga/tuneles-taninga-pintados.jpg" alt="">
-              </div>
-              <div class="flechasCarrusel">
-                <a href="#itemCarrusel-54"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-51"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
-            </div>
-          </div>
-          <div id="contePuntos">
-            <a href="#itemCarrusel-51">*</a>
-            <a href="#itemCarrusel-52">*</a>
-            <a href="#itemCarrusel-53">*</a>
-            <a href="#itemCarrusel-54">*</a>
-            <a href="#itemCarrusel-55">*</a>
-          </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.264517950828!2d-65.4000556!3d-31.379269099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942cf439c20fa9bb%3A0x2fac076e6726ce11!2zVMO6bmVsZXMgZGUgQ2hhbmNhbsOt!5e0!3m2!1ses-419!2sar!4v1709405659055!5m2!1ses-419!2sar"></iframe>
         </li>
     </section>
+  </div>
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
     <section id="ValledeCalamuchita">
         <li>
-          <h3>Valle de Calamuchita <a href="../html/videos.html#VideoValledeCalamuchita"><img class="icons" src="../img/icons8-vídeo-50.png"></a></h3>
+          <h3>Valle de Calamuchita <a href="../html/videos.html#VideoValledeCalamuchita"><img class="icons" src="../img/icons8-vídeo-50.png"></a>          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19157.03671649356!2d-64.63935312167597!3d-31.91970077548117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2b41275e57b49%3A0x9c5e237cadf41833!2sValle%20de%20Calamuchita!5e0!3m2!1ses-419!2sar!4v1709215317996!5m2!1ses-419!2sar"
+          ></iframe></h3>
           <p>
             En el corazón de la provincia de Córdoba, Argentina, yace un tesoro
             natural que cautiva a todos los que lo visitan: el Valle de
@@ -1124,68 +884,41 @@
             valle encantado y descubre todo lo que tiene para ofrecer. ¡Te
             esperamos con los brazos abiertos!
           </p>
-          <div id="conteItemsCarrusel" >
-            <div class="itemCarrusel" id="itemCarrusel-41">
-            <div class="tarjetaCarrusel" id="tarjetaCarrusel-41">
-              <img src="../img/Calamuchita/19655-arquitectura-centroeuropea-02.jpeg" alt="">
+          <div id="carouselValledeCalamuchita" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/Calamuchita/19655-arquitectura-centroeuropea-02.jpeg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Calamuchita/78131685jpg.webp" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Calamuchita/93912478.700x525.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item"> 
+                <img src="../img/Calamuchita/calamuchita.jpg" class="d-block w-75 h-0" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Calamuchita/embalse-imagen-1280x960.jpeg" class="d-block w-75 h-0" alt="...">
+              </div>
             </div>
-            <div class="flechasCarrusel"> 
-              <a href="#itemCarrusel-45"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-42"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselValledeCalamuchita" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselValledeCalamuchita" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="itemCarrusel" id="itemCarrusel-42">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-42">
-              <img src="../img/Calamuchita/78131685jpg.webp" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-41"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-43"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-43">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-43">
-              <img src="../img/Calamuchita/93912478.700x525.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-42"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-44"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-44">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-44">
-              <img src="../img/Calamuchita/calamuchita.jpg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-43"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-45"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-          <div class="itemCarrusel" id="itemCarrusel-45">
-            <div class="tarjetaCarrusel"  id="tarjetaCarrusel-45">
-              <img src="../img/Calamuchita/embalse-imagen-1280x960.jpeg" alt="">
-            </div>
-            <div class="flechasCarrusel">
-              <a href="#itemCarrusel-44"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-              <a href="#itemCarrusel-41"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-            </div>
-          </div>
-        </div>
-        <div id="contePuntos">
-          <a href="#itemCarrusel-41">*</a>
-          <a href="#itemCarrusel-42">*</a>
-          <a href="#itemCarrusel-43">*</a>
-          <a href="#itemCarrusel-44">*</a>
-          <a href="#itemCarrusel-45">*</a>
-        </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19157.03671649356!2d-64.63935312167597!3d-31.91970077548117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2b41275e57b49%3A0x9c5e237cadf41833!2sValle%20de%20Calamuchita!5e0!3m2!1ses-419!2sar!4v1709215317996!5m2!1ses-419!2sar"
-          ></iframe>
         </li>
     </section>
+  </div>
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
     <section id="VillaCarlosPaz">
         <li>
-          <h3>Villa Carlos Paz <a href="../html/videos.html#VideoVillaCarlosPaz"><img class="icons" src="../img/icons8-vídeo-50.png"></a></h3>
+          <h3>Villa Carlos Paz <a href="../html/videos.html#VideoVillaCarlosPaz"><img class="icons" src="../img/icons8-vídeo-50.png"></a>          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54481.110975700234!2d-64.49973669999999!3d-31.412212949999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d6640d6777c71%3A0x75c24ab6cb121bed!2sVilla%20Carlos%20Paz%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1709405635442!5m2!1ses-419!2sar"></iframe>
+          </h3>
           <p>Ubicada en el valle de Punilla, en la provincia de Córdoba, Argentina, Villa Carlos Paz se erige como un destino turístico emblemático, encantando a visitantes con su belleza natural, historia vibrante y una variedad de actividades que prometen una experiencia inolvidable.
             La historia de Villa Carlos Paz se remonta a principios del siglo XX, cuando se estableció como un pequeño pueblo de montaña. Con el tiempo, su ubicación estratégica y la belleza de su entorno atrajeron a turistas de todo el país, transformándola en uno de los destinos más populares de Argentina.
             Los paisajes que rodean a Villa Carlos Paz son simplemente impresionantes. Ubicada a orillas del lago San Roque y rodeada por las majestuosas Sierras Chicas, la ciudad ofrece vistas panorámicas que quitan el aliento. Desde las playas del lago hasta los picos de las montañas, cada rincón de Villa Carlos Paz parece sacado de un cuento de hadas.
@@ -1195,67 +928,44 @@
             Las actividades que se pueden realizar en Villa Carlos Paz son igualmente emocionantes. Desde paseos en barco por el lago San Roque hasta excursiones de senderismo y trekking por las montañas circundantes, hay algo para todos los gustos y niveles de aventura. En verano, las playas del lago son el lugar perfecto para relajarse y refrescarse, mientras que en invierno, las pistas de esquí cercanas ofrecen diversión para toda la familia.
             En cada estación del año, Villa Carlos Paz revela una faceta distinta de su encanto. En primavera, los campos florecen con una explosión de color, mientras que en otoño, los árboles se tiñen de tonos dorados y rojizos. En verano, el sol brilla con intensidad, invitando a disfrutar del aire libre y las actividades acuáticas. Y en invierno, el clima fresco y las montañas nevadas crean un paisaje de postal que enamora a todos los visitantes.
             Villa Carlos Paz es mucho más que un destino turístico; es un lugar donde la belleza natural se encuentra con la hospitalidad cordobesa, creando una experiencia inolvidable para todos los que la visitan. Con su historia rica, paisajes impresionantes y una variedad de actividades para disfrutar, Villa Carlos Paz es un destino que no se puede dejar de explorar.</p>
-            <div id="conteItemsCarrusel" >
-              <div class="itemCarrusel" id="itemCarrusel-46">
-              <div class="tarjetaCarrusel" id="tarjetaCarrusel-46">
-                <img src="../img/VCP/a27f56ca-be2d-4532-a280-24d298b3b718.webp" alt="">
+            <div id="carouselVillaCarlosPaz" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/VCP/a27f56ca-be2d-4532-a280-24d298b3b718.webp" class="d-block w-75 h-0" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/VCP/cu-cu-22.jpg" class="d-block w-75 h-0" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/VCP/sanroque_tortolo2.jpg" class="d-block w-75 h-0" alt="...">
+                </div>
+                <div class="carousel-item"> 
+                  <img src="../img/VCP/turismo.jpg" class="d-block w-75 h-0" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/VCP/VCP.jpg" class="d-block w-75 h-0" alt="...">
+                </div>
               </div>
-              <div class="flechasCarrusel"> 
-                <a href="#itemCarrusel-50"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-47"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselVillaCarlosPaz" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselVillaCarlosPaz" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="itemCarrusel" id="itemCarrusel-47">
-              <div class="tarjetaCarrusel"  id="tarjetaCarrusel-47">
-                <img src="../img/VCP/cu-cu-22.jpg" alt="">
-              </div>
-              <div class="flechasCarrusel">
-                <a href="#itemCarrusel-46"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-48"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
-            </div>
-            <div class="itemCarrusel" id="itemCarrusel-48">
-              <div class="tarjetaCarrusel"  id="tarjetaCarrusel-48">
-                <img src="../img/VCP/sanroque_tortolo2.jpg" alt="">
-              </div>
-              <div class="flechasCarrusel">
-                <a href="#itemCarrusel-47"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-49"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
-            </div>
-            <div class="itemCarrusel" id="itemCarrusel-49">
-              <div class="tarjetaCarrusel"  id="tarjetaCarrusel-49">
-                <img src="../img/VCP/turismo.jpg" alt="">
-              </div>
-              <div class="flechasCarrusel">
-                <a href="#itemCarrusel-48"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-50"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
-            </div>
-            <div class="itemCarrusel" id="itemCarrusel-50">
-              <div class="tarjetaCarrusel"  id="tarjetaCarrusel-50">
-                <img src="../img/VCP/VCP.jpg" alt="">
-              </div>
-              <div class="flechasCarrusel">
-                <a href="#itemCarrusel-49"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3UwQmAQAwEwLGRQyzC/ivwKhCxEkXw7csEhUwBGxLIUsqDQaCGBXNE+IgNB/rbmzSsd/iOqcLDz5Iy4FJDvvNoKVWRUnblR04drR/LqSMkXgAAAABJRU5ErkJggg=="></i></a>
-                <a href="#itemCarrusel-46"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAS0lEQVR4nO2UsQ0AIQwDL5uxTdbhO6YFmhQsYD1IPiltTolkgzFF1EgI4AOGStKACawSSSR5SGSXpCVXvCq9/JegBdCVAZOXnXmcDdAZH+AfKMBTAAAAAElFTkSuQmCC"></i></a>
-              </div>
-            </div>
-          </div>
-          <div id="contePuntos">
-            <a href="#itemCarrusel-46">*</a>
-            <a href="#itemCarrusel-47">*</a>
-            <a href="#itemCarrusel-48">*</a>
-            <a href="#itemCarrusel-49">*</a>
-            <a href="#itemCarrusel-50">*</a>
-          </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54481.110975700234!2d-64.49973669999999!3d-31.412212949999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d6640d6777c71%3A0x75c24ab6cb121bed!2sVilla%20Carlos%20Paz%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1709405635442!5m2!1ses-419!2sar"></iframe>
         </li>
       </ul>
     </section>
   </div>
+</div>
+  </section>
+</main>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
   </body>
 </html>
-
-
-
