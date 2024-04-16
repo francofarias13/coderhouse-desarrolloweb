@@ -32,7 +32,8 @@
         border-radius: 10px;
         width: 539px;
         height: 400px;
-        :hover {transform: scale(1.1);}
-
+        :hover {transform: scale(1.1);
+        transition: 1s;
+    }
     }
 }

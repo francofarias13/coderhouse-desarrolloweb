@@ -44,6 +44,7 @@ header nav a {
 header .link :hover {
   background-color: rgb(252, 252, 252);
   color: rgb(0, 0, 0);
+  transition: 1s;
 }
 header .link a {
   background-color: rgb(197, 207, 201);
@@ -139,6 +140,7 @@ main .contacto-config textarea {
 }
 .card :hover {
   transform: scale(1.1);
+  transition: 1s;
 }
 .card p {
   color: black;
@@ -201,6 +203,7 @@ main .contacto-config textarea {
 }
 .videos-conf li :hover {
   transform: scale(1.1);
+  transition: 1s;
 }
 
 /* @import './medias-queries/media-desktop'; */
