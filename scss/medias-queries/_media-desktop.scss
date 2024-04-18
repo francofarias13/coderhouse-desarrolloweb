@@ -1,9 +1,11 @@
-  /* dextop
-  @media only screen and (min-width: 1040px) {
+  /* dextop */
+  @media screen and (min-width: 1024px) {
     header{
+
         h1{
             background-color: black;
             color: aliceblue;
+            font-size: 40px;
             width: 100%;
             text-align: left;
             display: flex;
@@ -18,10 +20,11 @@
         .menu-principal{
             img{
                 background-color: rgb(0, 0, 0);
-                width: 30px;
-                height: 30px;
+                width: 50px;
+                height: 50px;
                 position: relative;
                 left: 0px;
+                margin: 5px;
             }
         }
         nav {
@@ -57,7 +60,7 @@
         .pag-inicio{
             h2{
                 position: relative;
-                top: 50px;
+                top: 0px;
             }
         }
         img {
@@ -68,7 +71,7 @@
           padding: 10px;
           border-radius: 10px;
           position: relative;
-          left: 150px;
+          left: 135px;
         }  
         p{
             color: black;
@@ -81,13 +84,10 @@
         }
         h2{
             text-align: center;
-            margin-top: 50px;
+            margin-top: 0px;
             font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
               "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
             background-color: rgb(226, 202, 202);
-            #videoprincipal {
-                width: 100%;
-              }
         }
         h3 {
             text-align: center;
@@ -141,8 +141,8 @@
                 border-radius: 5px;
               }
           }
-    }
-    .video-config{
+    
+    .videos-conf{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -151,13 +151,14 @@
         position: relative;
         bottom: 0px;
         video{
-            width: 500px;
-            height: 400px;
-            position: relative;
-            bottom: 80px;
-            left: 0px;
-            right: 50px;
-            margin: 20px;
+          width: 490px;
+          height: 380px;
+          position: relative;
+          bottom: 70px;
+          left: 5px;
+          right: 50px;
+          margin: 20px;
+          border-radius: 10px;
         }
         h3{
             position: relative;
@@ -166,20 +167,26 @@
             right: 50px;
         }
         li{
-            color: black;
-            background-color: white;
-            margin: 20px;
-            border-style: solid;
-            border-radius: 10px;
-            width: 550px;
-            height: 410px;
-            :hover {transform: scale(1.1);}
+          color: black;
+          background-color: white;
+          margin: 20px;
+          border-style: solid;
+          border-radius: 10px;
+          width: 539px;
+          height: 400px;
+          :hover {transform: scale(1.1);
+          transition: 1s;
+            }
         }
     }
     .card{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        :hover {
+          transform: scale(1.1);
+          transition: 1s;
+        }
     
           p{
             color: black;
@@ -192,16 +199,14 @@
             display: grid;
             justify-content: center;
             flex-wrap: wrap;
-            :hover {
-                transform: scale(1.1);
-              }
+            font-size: 20px;
           }
           .card-nosotros {
-            width: 220px;
-            height: 160px;
+            width: 200px;
+            height: 140px;
             text-align: left;
             position: relative;
-            bottom: 10px;
+            bottom: 0px;
             left: 0px;
             margin: 20px;
             padding: 10px;
@@ -210,5 +215,4 @@
     
     }
     }
-
-     */
+  }
