@@ -10,8 +10,7 @@
             text-align: left;
             display: flex;
             align-items: center;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font: $title-font;
             img{
                 width: 70px;
                 height: 50px;
@@ -20,8 +19,7 @@
         .menu-principal{
             img{
                 background-color: rgb(0, 0, 0);
-                width: 50px;
-                height: 50px;
+                @include sizes(50px, 50px);
                 position: relative;
                 left: 0px;
                 margin: 5px;
@@ -31,15 +29,13 @@
             text-align: right;
             background-color: black;
             width: 100%;
-          
         a {
             font-size: 15px;
             text-decoration: none;
             color: black;
             margin-left: 5px;
             margin-right: 5px;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font: $title-font;
             text-align: right;
           }
         }
@@ -48,6 +44,8 @@
                 background-color: rgb(197, 207, 201);
                 border-radius: 2px;
                 padding: 1px;
+                position: relative;
+                bottom: 5px;
                 margin: 5px;
                 :hover {
                     background-color: rgb(252, 252, 252);
@@ -63,37 +61,45 @@
                 top: 0px;
             }
         }
+
+        .carousel-inner{
         img {
-          width: 550px;
-          height: 400px;
-          text-align: left;
+          @include sizes(550px, 400px);
           margin: 20px;
           padding: 10px;
-          border-radius: 10px;
           position: relative;
-          left: 135px;
+          left: 140px;
+          color: black;
+          background-color: white;
+          border-style: solid;
+          border-radius: 10px;
         }  
+      }
+
         p{
             color: black;
             font-size: 15px;
             text-align: center;
             margin: 30px;
             margin-top: 30px;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font: $title-font;
         }
         h2{
             text-align: center;
             margin-top: 0px;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-            background-color: rgb(226, 202, 202);
+            font: $title-font;
+            background-color: rgb(236, 236, 236);
+            font-size: 25px;
         }
         h3 {
             text-align: center;
             margin-top: 30px;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font: $title-font;
+            font-size: 20px;
+            text-shadow: 
+                0 0 5px #fff, /* Capa base blanca */
+                0 0 10px #fff, /* Aumento de tamaño y color */
+                0 0 20px #08f, /* Color principal del neón */
           }
           ul {
             list-style-type: none;
@@ -102,16 +108,14 @@
             list-style-type: none;
           }
           .icons {
-            width: 30px;
-            height: 30px;
+            @include sizes(30px, 30px);
             position: relative;
             left: 0px;
             margin: 0%;
             padding: 0%;
           }
           iframe {
-            width: 100px;
-            height: 90px;
+            @include sizes(100px, 90px);
             position: relative;
             left: 0px;
             top: 30px;
@@ -140,6 +144,45 @@
                 margin-left: 30px;
                 border-radius: 5px;
               }
+              @keyframes moverAuto {
+
+                100%{
+                  transform: translateX(900px);
+                }
+              }
+              
+              @keyframes moverEquipaje {
+                0%{
+                  transform: rotate(-5deg);
+                }
+                50%{
+                  transform: rotate(10deg);
+                }
+                100%{
+                  transform: translateX(5deg);
+                }   
+              }
+              .icons-auto{
+                animation-name: moverAuto;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;  
+              position: fixed;
+              bottom: 450px;
+              left: 700px;
+              width: 150px;
+              height: 80px;
+              }
+              .icons-equipaje{
+                animation-name: moverEquipaje;
+                animation-duration: 15s;
+                animation-iteration-count:infinite;
+              position: fixed;
+              bottom: 100px;
+              left: 800px;
+              width: 400px;
+              height: 300px;
+            }
           }
     
     .videos-conf{
@@ -151,8 +194,7 @@
         position: relative;
         bottom: 0px;
         video{
-          width: 490px;
-          height: 380px;
+          @include sizes(490px, 380px);
           position: relative;
           bottom: 70px;
           left: 5px;
@@ -172,8 +214,7 @@
           margin: 20px;
           border-style: solid;
           border-radius: 10px;
-          width: 539px;
-          height: 400px;
+          @include sizes(539px, 400px);
           :hover {transform: scale(1.1);
           transition: 1s;
             }
@@ -194,16 +235,14 @@
             margin: 20px;
             border-style: solid;
             border-radius: 10px;
-            width: 240px;
-            height: 220px;
+            @include sizes(240px, 220px);
             display: grid;
             justify-content: center;
             flex-wrap: wrap;
             font-size: 20px;
           }
           .card-nosotros {
-            width: 200px;
-            height: 140px;
+            @include sizes(200px, 140px);
             text-align: left;
             position: relative;
             bottom: 0px;

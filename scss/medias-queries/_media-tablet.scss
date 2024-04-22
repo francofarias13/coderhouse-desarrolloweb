@@ -10,8 +10,7 @@
             text-align: left;
             display: flex;
             align-items: center;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font: $title-font;
         }
         .menu-principal{
             img{
@@ -34,8 +33,7 @@
             color: black;
             margin-left: 5px;
             margin-right: 5px;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font: $title-font;
             text-align: right;
           }
         }
@@ -59,40 +57,44 @@
                 top: 0px;
             }
         }
+        .carousel-inner{
         img {
-            width: 450px;
-            height: 300px;
-            text-align: left;
+            @include sizes(450px, 300px);
             margin: 10px;
             padding: 0px;
             border-radius: 10px;
             position: relative;
             left: 75px;
-        }  
+            color: black;
+            border-style: solid;
+            border-radius: 10px;
+          }  
+        }
         p{
             color: black;
-            font-size: 12px;
+            font-size: 10px;
             text-align: center;
             margin: 30px;
-            margin-top: 30px;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            margin-top: 20px;
+            font: $title-font;
         }
         h2{
             text-align: center;
             font-size: 20px;
             margin-top: 0px;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-            background-color: rgb(226, 202, 202);
+            font: $title-font;
+            background-color: rgb(236, 236, 236);
               }
         
         h3 {
           font-size: 15px;
             text-align: center;
             margin-top: 10px;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font: $title-font;
+            text-shadow: 
+            0 0 5px #fff, /* Capa base blanca */
+            0 0 10px #fff, /* Aumento de tamaño y color */
+            0 0 15px #08f, /* Color principal del neón */
           }
           ul {
             list-style-type: none;
@@ -102,16 +104,14 @@
             font-size: 10px;
           }
           .icons {
-            width: 25px;
-            height: 25px;
+            @include sizes(25px, 25px);
             position: relative;
             left: 0px;
             margin: 0%;
             padding: 0%;
           }
           iframe {
-            width: 60px;
-            height: 50px;
+            @include sizes(60px, 50px);
             position: relative;
             left: 0px;
             top: 20px;
@@ -145,6 +145,45 @@
                 border-radius: 5px;
                 font-size: 12px;
               }
+              @keyframes moverAvion {
+
+                100%{
+                  transform: translateX(450px);
+                }
+              }
+              
+              @keyframes moverPersonas {
+                0%{
+                  transform: rotate(-5deg);
+                }
+                50%{
+                  transform: rotate(10deg);
+                }
+                100%{
+                  transform: translateX(5deg);
+                }   
+              }
+              .icons-auto{
+                animation-name: moverAvion;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;  
+              position: fixed;
+              bottom: 400px;
+              left: 300px;
+              width: 75px;
+              height: 40px;
+              }
+              .icons-equipaje{
+                animation-name: moverPersonas;
+                animation-duration: 15s;
+                animation-iteration-count:infinite;
+              position: fixed;
+              bottom: 210px;
+              left: 400px;
+              width: 250px;
+              height: 150px;
+            }
           }
 
           .videos-conf{
@@ -156,8 +195,7 @@
             position: relative;
             bottom: 0px;
             video{
-                width: 250px;
-                height: 150px;
+                @include sizes(250px, 150px);
                 position: relative;
                 bottom: 30px;
                 left: -1px;
@@ -176,8 +214,7 @@
                 margin: 10px;
                 border-style: solid;
                 border-radius: 10px;
-                width: 289px;
-                height: 177px;
+                @include sizes(289px, 177px);
               :hover {transform: scale(1.1);
               transition: 1s;
                 }
@@ -198,16 +235,14 @@
                 margin: 20px;
                 border-style: solid;
                 border-radius: 10px;
-                width: 200px;
-                height: 160px;
+                @include sizes(200px, 160px);
                 display: grid;
                 justify-content: center;
                 flex-wrap: wrap;
                 font-size: 15px;
               }
               .card-nosotros {
-                width: 160px;
-                height: 115px;
+                @include sizes(160px, 115px);
                 text-align: left;
                 position: relative;
                 bottom: 15px;

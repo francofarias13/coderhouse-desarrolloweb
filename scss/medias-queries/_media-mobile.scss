@@ -10,14 +10,12 @@
             text-align: left;
             display: flex;
             align-items: center;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font: $title-font;
         }
         .menu-principal{
             img{
                 background-color: rgb(0, 0, 0);
-                width: 20px;
-                height: 20px;
+                @include sizes(20px, 20px);
                 position: relative;
                 left: 0px;
                 margin: 5px;
@@ -34,8 +32,7 @@
             color: black;
             margin-left: 5px;
             margin-right: 5px;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font: $title-font;
           }
         }
         .link{
@@ -43,7 +40,7 @@
                 background-color: rgb(196, 204, 198);
                 border-radius: 2px;
                 padding: 1px;
-                margin: 5px;
+                margin: 1px;
                 width: 50px;
                 :hover {
                     background-color: rgb(252, 252, 252);
@@ -59,40 +56,44 @@
                 top: 0px;
             }
         }
+        .carousel-inner{
         img {
-            width: 200px;
-            height: 150px;
+            @include sizes(200px, 150px);
             text-align: left;
             margin: 10px;
             padding: 0px;
             border-radius: 10px;
             position: relative;
             left: 40px;
+            color: black;
+            border-style: solid;
         }  
+      }
         p{
             color: black;
-            font-size: 10px;
+            font-size: 7px;
             text-align: center;
-            margin: 30px;
+            margin: 10px;
             margin-top: 15px;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            font: $title-font;
         }
         h2{
             text-align: center;
             font-size: 15px;
-            margin-top: 20px;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-            background-color: rgb(226, 202, 202);
+            margin-top: 0px;
+            font: $title-font;
+            background-color: rgb(236, 236, 236);
               }
         
         h3 {
             text-align: center;
             font-size: 10px;
-            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-              margin-top: 0px;
+            font: $title-font;
+            margin-top: 10px;
+            text-shadow: 
+            0 0 1px #fff, /* Capa base blanca */
+            0 0 5px #fff, /* Aumento de tamaño y color */
+            0 0 10px #08f, /* Color principal del neón */
           }
           ul {
             list-style-type: none;
@@ -102,16 +103,14 @@
             font-size: 10px;
           }
           .icons {
-            width: 30px;
-            height: 30px;
+            @include sizes(20px, 20px);
             position: relative;
             left: 0px;
             margin: 0%;
             padding: 0%;
           }
           iframe {
-            width: 60px;
-            height: 40px;
+            @include sizes(60px, 40px);
             position: relative;
             left: 0px;
             top: 15px;
@@ -145,8 +144,47 @@
                 border-radius: 5px;
                 font-size: 10px;
               }
+              @keyframes moverAuto {
+
+                100%{
+                  transform: translateX(400px);
+                }
+              }
+              
+              @keyframes moverEquipaje {
+                0%{
+                  transform: rotate(-5deg);
+                }
+                50%{
+                  transform: rotate(10deg);
+                }
+                100%{
+                  transform: translateX(5deg);
+                }   
+              }
+              .icons-auto{
+                animation-name: moverAuto;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;  
+              position: fixed;
+              bottom: 350px;
+              left: 150px;
+              width: 75px;
+              height: 40px;
+              }
+              .icons-equipaje{
+                animation-name: moverEquipaje;
+                animation-duration: 15s;
+                animation-iteration-count:infinite;
+              position: fixed;
+              bottom: 210px;
+              left: 200px;
+              width: 150px;
+              height: 100px;
+            }
           }
-          .videos-conf{
+           .videos-conf{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -155,8 +193,7 @@
             position: relative;
             bottom: 0px;
             video{
-                width: 180px;
-                height: 100px;
+                @include sizes(180px, 100px);
                 position: relative;
                 right: 10px;
                 bottom: 50px;
@@ -179,6 +216,7 @@
                 }
             }
         }
+
         .card{
             display: flex;
             justify-content: center;
@@ -194,16 +232,14 @@
                 margin: 20px;
                 border-style: solid;
                 border-radius: 10px;
-                width: 90px;
-                height: 80px;
+                @include sizes(90px, 80px);
                 display: grid;
                 justify-content: center;
                 flex-wrap: wrap;
                 font-size: 8px;
               }
               .card-nosotros {
-                width: 75px;
-                height: 55px;
+                @include sizes(75px, 55px);
                 text-align: left;
                 position: relative;
                 bottom: 20px;
