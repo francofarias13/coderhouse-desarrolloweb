@@ -253,4 +253,16 @@
               }
         }
     }
+    footer {
+      text-align: center;
+      font-size: 10px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      background: linear-gradient(to right, #bdc3c7, #2c3e50);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      position: relative;
+      top: 5px;
+  }
   }

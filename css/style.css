@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables */
 /* mixin */
 * {
@@ -380,6 +381,16 @@ main .contacto-config textarea {
     padding: 10px;
     border-radius: 20px;
   }
+  footer {
+    text-align: center; /* Centra el texto */
+    font-size: 16px; /* Tamaño del texto */
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    font-weight: bold;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50); /* Degradado del texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Hace el texto transparente para que se vea el degradado */
+  }
 }
 /* Tablet */
 @media screen and (min-width: 501px) and (max-width: 960px) {
@@ -619,6 +630,18 @@ main .contacto-config textarea {
     padding: 10px;
     border-radius: 20px;
   }
+  footer {
+    text-align: center;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    top: 5px;
+  }
 }
 /* Mobile */
 @media screen and (max-width: 500px) {
@@ -852,6 +875,18 @@ main .contacto-config textarea {
     margin: 20px;
     padding: 10px;
     border-radius: 20px;
+  }
+  footer {
+    text-align: center;
+    font-size: 7px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    top: 10px;
   }
 }
 
