@@ -148,7 +148,7 @@
               @keyframes moverAvion {
 
                 100%{
-                  transform: translateX(450px);
+                  transform: translateX(350px);
                 }
               }
               
@@ -165,24 +165,24 @@
               }
               .icons-avion{
                 animation-name: moverAvion;
-                animation-duration: 10s;
+                animation-duration: 5s;
                 animation-iteration-count: infinite;
                 animation-timing-function: linear;  
-              position: absolute;
-              bottom: 400px;
-              left: 300px;
-              width: 75px;
-              height: 40px;
+              position: relative;
+              bottom: 500px;
+              left: 0px;
+              width: 100px;
+              height: 55px;
               }
               .icons-personas{
                 animation-name: moverPersonas;
                 animation-duration: 15s;
                 animation-iteration-count:infinite;
-              position: absolute;
-              bottom: 210px;
+              position: relative;
+              bottom: 300px;
               left: 400px;
-              width: 250px;
-              height: 150px;
+              width: 300px;
+              height: 200px;
             }
           }
 

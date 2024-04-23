@@ -167,9 +167,9 @@
                 animation-duration: 10s;
                 animation-iteration-count: infinite;
                 animation-timing-function: linear;  
-              position: absolute;
-              bottom: 450px;
-              left: 700px;
+              position:relative;
+              bottom: 600px;
+              left: 0px;
               width: 150px;
               height: 80px;
               }
@@ -177,8 +177,8 @@
                 animation-name: moverPersonas;
                 animation-duration: 15s;
                 animation-iteration-count:infinite;
-              position: absolute;
-              bottom: 100px;
+              position: relative;
+              bottom: 350px;
               left: 800px;
               width: 400px;
               height: 300px;
@@ -263,5 +263,6 @@
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
+      position: static;
   }
   }

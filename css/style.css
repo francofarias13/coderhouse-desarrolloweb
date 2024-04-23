@@ -293,9 +293,9 @@ main .contacto-config textarea {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    position: absolute;
-    bottom: 450px;
-    left: 700px;
+    position: relative;
+    bottom: 600px;
+    left: 0px;
     width: 150px;
     height: 80px;
   }
@@ -303,8 +303,8 @@ main .contacto-config textarea {
     animation-name: moverPersonas;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    position: absolute;
-    bottom: 100px;
+    position: relative;
+    bottom: 350px;
     left: 800px;
     width: 400px;
     height: 300px;
@@ -389,6 +389,7 @@ main .contacto-config textarea {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    position: static;
   }
 }
 /* Tablet */
@@ -524,7 +525,7 @@ main .contacto-config textarea {
   }
   @keyframes moverAvion {
     100% {
-      transform: translateX(450px);
+      transform: translateX(350px);
     }
   }
   @keyframes moverPersonas {
@@ -540,24 +541,24 @@ main .contacto-config textarea {
   }
   main .contacto-config .icons-avion {
     animation-name: moverAvion;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    position: absolute;
-    bottom: 400px;
-    left: 300px;
-    width: 75px;
-    height: 40px;
+    position: relative;
+    bottom: 500px;
+    left: 0px;
+    width: 100px;
+    height: 55px;
   }
   main .contacto-config .icons-personas {
     animation-name: moverPersonas;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    position: absolute;
-    bottom: 210px;
+    position: relative;
+    bottom: 300px;
     left: 400px;
-    width: 250px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
   }
   main .videos-conf {
     display: flex;
@@ -680,7 +681,8 @@ main .contacto-config textarea {
     border-radius: 2px;
     padding: 1px;
     margin: 1px;
-    width: 50px;
+    position: relative;
+    bottom: 3px;
   }
   header .link a :hover {
     background-color: rgb(252, 252, 252);
@@ -787,7 +789,7 @@ main .contacto-config textarea {
   }
   @keyframes moverAvion {
     100% {
-      transform: translateX(400px);
+      transform: translateX(145px);
     }
   }
   @keyframes moverPersonas {
@@ -803,12 +805,12 @@ main .contacto-config textarea {
   }
   main .contacto-config .icons-avion {
     animation-name: moverAvion;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    position: absolute;
-    bottom: 350px;
-    left: 150px;
+    position: relative;
+    bottom: 380px;
+    left: 0px;
     width: 75px;
     height: 40px;
   }
@@ -816,8 +818,8 @@ main .contacto-config textarea {
     animation-name: moverPersonas;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    position: absolute;
-    bottom: 210px;
+    position: relative;
+    bottom: 300px;
     left: 200px;
     width: 150px;
     height: 100px;
