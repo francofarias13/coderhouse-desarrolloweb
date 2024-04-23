@@ -144,14 +144,14 @@
                 margin-left: 30px;
                 border-radius: 5px;
               }
-              @keyframes moverAuto {
+              @keyframes moverAvion {
 
                 100%{
                   transform: translateX(900px);
                 }
               }
               
-              @keyframes moverEquipaje {
+              @keyframes moverPersonas {
                 0%{
                   transform: rotate(-5deg);
                 }
@@ -162,22 +162,22 @@
                   transform: translateX(5deg);
                 }   
               }
-              .icons-auto{
-                animation-name: moverAuto;
+              .icons-avion{
+                animation-name: moverAvion;
                 animation-duration: 10s;
                 animation-iteration-count: infinite;
                 animation-timing-function: linear;  
-              position: fixed;
+              position: absolute;
               bottom: 450px;
               left: 700px;
               width: 150px;
               height: 80px;
               }
-              .icons-equipaje{
-                animation-name: moverEquipaje;
+              .icons-personas{
+                animation-name: moverPersonas;
                 animation-duration: 15s;
                 animation-iteration-count:infinite;
-              position: fixed;
+              position: absolute;
               bottom: 100px;
               left: 800px;
               width: 400px;
@@ -255,13 +255,13 @@
     }
     }
     footer {
-      text-align: center; /* Centra el texto */
-      font-size: 16px; /* Tamaño del texto */
-      font-family: Arial, sans-serif; /* Tipo de fuente */
+      text-align: center;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
       font-weight: bold;
-      background: linear-gradient(to right, #bdc3c7, #2c3e50); /* Degradado del texto */
+      background: linear-gradient(to right, #bdc3c7, #2c3e50);
       -webkit-background-clip: text;
       background-clip: text;
-      color: transparent; /* Hace el texto transparente para que se vea el degradado */
+      color: transparent;
   }
   }

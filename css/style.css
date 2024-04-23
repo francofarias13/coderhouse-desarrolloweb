@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Variables */
 /* mixin */
 * {
@@ -273,12 +272,12 @@ main .contacto-config textarea {
     margin-left: 30px;
     border-radius: 5px;
   }
-  @keyframes moverAuto {
+  @keyframes moverAvion {
     100% {
       transform: translateX(900px);
     }
   }
-  @keyframes moverEquipaje {
+  @keyframes moverPersonas {
     0% {
       transform: rotate(-5deg);
     }
@@ -289,22 +288,22 @@ main .contacto-config textarea {
       transform: translateX(5deg);
     }
   }
-  main .contacto-config .icons-auto {
-    animation-name: moverAuto;
+  main .contacto-config .icons-avion {
+    animation-name: moverAvion;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    position: fixed;
+    position: absolute;
     bottom: 450px;
     left: 700px;
     width: 150px;
     height: 80px;
   }
-  main .contacto-config .icons-equipaje {
-    animation-name: moverEquipaje;
+  main .contacto-config .icons-personas {
+    animation-name: moverPersonas;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    position: fixed;
+    position: absolute;
     bottom: 100px;
     left: 800px;
     width: 400px;
@@ -382,14 +381,14 @@ main .contacto-config textarea {
     border-radius: 20px;
   }
   footer {
-    text-align: center; /* Centra el texto */
-    font-size: 16px; /* Tamaño del texto */
-    font-family: Arial, sans-serif; /* Tipo de fuente */
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
     font-weight: bold;
-    background: linear-gradient(to right, #bdc3c7, #2c3e50); /* Degradado del texto */
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent; /* Hace el texto transparente para que se vea el degradado */
+    color: transparent;
   }
 }
 /* Tablet */
@@ -454,7 +453,7 @@ main .contacto-config textarea {
   }
   main p {
     color: black;
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
     margin: 30px;
     margin-top: 20px;
@@ -462,13 +461,13 @@ main .contacto-config textarea {
   }
   main h2 {
     text-align: center;
-    font-size: 20px;
+    font-size: 21px;
     margin-top: 0px;
     font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     background-color: rgb(236, 236, 236);
   }
   main h3 {
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
     margin-top: 10px;
     font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -479,7 +478,7 @@ main .contacto-config textarea {
   }
   main li {
     list-style-type: none;
-    font-size: 10px;
+    font-size: 13px;
   }
   main .icons {
     width: 25px;
@@ -499,29 +498,29 @@ main .contacto-config textarea {
   }
   main .contacto-config p {
     text-align: left;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 13px;
   }
   main .contacto-config input {
     border-radius: 5px;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
   }
   main .contacto-config label {
     margin-left: 30px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 13px;
   }
   main .contacto-config #opciones {
     margin-left: 30px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 13px;
   }
   main .contacto-config textarea {
     margin-left: 30px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 13px;
   }
   @keyframes moverAvion {
     100% {
@@ -539,22 +538,22 @@ main .contacto-config textarea {
       transform: translateX(5deg);
     }
   }
-  main .contacto-config .icons-auto {
+  main .contacto-config .icons-avion {
     animation-name: moverAvion;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    position: fixed;
+    position: absolute;
     bottom: 400px;
     left: 300px;
     width: 75px;
     height: 40px;
   }
-  main .contacto-config .icons-equipaje {
+  main .contacto-config .icons-personas {
     animation-name: moverPersonas;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    position: fixed;
+    position: absolute;
     bottom: 210px;
     left: 400px;
     width: 250px;
@@ -570,8 +569,8 @@ main .contacto-config textarea {
     bottom: 0px;
   }
   main .videos-conf video {
-    width: 250px;
-    height: 150px;
+    width: 270px;
+    height: 165px;
     position: relative;
     bottom: 30px;
     left: -1px;
@@ -590,8 +589,8 @@ main .contacto-config textarea {
     margin: 10px;
     border-style: solid;
     border-radius: 10px;
-    width: 289px;
-    height: 177px;
+    width: 309px;
+    height: 197px;
   }
   main .videos-conf li :hover {
     transform: scale(1.1);
@@ -669,7 +668,7 @@ main .contacto-config textarea {
     width: 100%;
   }
   header nav a {
-    font-size: 7px;
+    font-size: 10px;
     text-decoration: none;
     color: black;
     margin-left: 5px;
@@ -703,9 +702,21 @@ main .contacto-config textarea {
     color: black;
     border-style: solid;
   }
+  main #carouselAltasCumbres .carousel-inner .carousel-item img {
+    width: 200px;
+    height: 150px;
+    text-align: left;
+    margin: 10px;
+    padding: 0px;
+    border-radius: 10px;
+    position: relative;
+    left: 36px;
+    color: black;
+    border-style: solid;
+  }
   main p {
     color: black;
-    font-size: 7px;
+    font-size: 10px;
     text-align: center;
     margin: 10px;
     margin-top: 15px;
@@ -713,14 +724,14 @@ main .contacto-config textarea {
   }
   main h2 {
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     margin-top: 0px;
     font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     background-color: rgb(236, 236, 236);
   }
   main h3 {
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
     font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     margin-top: 10px;
     text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 10px #08f;
@@ -730,11 +741,11 @@ main .contacto-config textarea {
   }
   main li {
     list-style-type: none;
-    font-size: 10px;
+    font-size: 8px;
   }
   main .icons {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     position: relative;
     left: 0px;
     margin: 0%;
@@ -774,12 +785,12 @@ main .contacto-config textarea {
     border-radius: 5px;
     font-size: 10px;
   }
-  @keyframes moverAuto {
+  @keyframes moverAvion {
     100% {
       transform: translateX(400px);
     }
   }
-  @keyframes moverEquipaje {
+  @keyframes moverPersonas {
     0% {
       transform: rotate(-5deg);
     }
@@ -790,22 +801,22 @@ main .contacto-config textarea {
       transform: translateX(5deg);
     }
   }
-  main .contacto-config .icons-auto {
-    animation-name: moverAuto;
+  main .contacto-config .icons-avion {
+    animation-name: moverAvion;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    position: fixed;
+    position: absolute;
     bottom: 350px;
     left: 150px;
     width: 75px;
     height: 40px;
   }
-  main .contacto-config .icons-equipaje {
-    animation-name: moverEquipaje;
+  main .contacto-config .icons-personas {
+    animation-name: moverPersonas;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    position: fixed;
+    position: absolute;
     bottom: 210px;
     left: 200px;
     width: 150px;
@@ -821,14 +832,14 @@ main .contacto-config textarea {
     bottom: 0px;
   }
   main .videos-conf video {
-    width: 180px;
-    height: 100px;
+    width: 200px;
+    height: 120px;
     position: relative;
     right: 10px;
     bottom: 50px;
     left: 0px;
     top: 1px;
-    margin: 5px;
+    margin: 6px;
     border-radius: 10px;
   }
   main .videos-conf h3 {
@@ -836,8 +847,8 @@ main .contacto-config textarea {
     bottom: 20px;
     left: 0px;
     right: 50px;
-    font-size: 8px;
-    top: 5px;
+    font-size: 10px;
+    top: 0px;
   }
   main .videos-conf li :hover {
     transform: scale(1.1);
@@ -858,16 +869,16 @@ main .contacto-config textarea {
     margin: 20px;
     border-style: solid;
     border-radius: 10px;
-    width: 90px;
-    height: 80px;
+    width: 95px;
+    height: 85px;
     display: grid;
     justify-content: center;
     flex-wrap: wrap;
-    font-size: 8px;
+    font-size: 9px;
   }
   main .card .card-nosotros {
-    width: 75px;
-    height: 55px;
+    width: 80px;
+    height: 60px;
     text-align: left;
     position: relative;
     bottom: 20px;

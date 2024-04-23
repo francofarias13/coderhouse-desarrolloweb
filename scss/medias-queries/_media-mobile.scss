@@ -27,7 +27,7 @@
             width: 100%;
           
         a {
-            font-size: 7px;
+            font-size: 10px;
             text-decoration: none;
             color: black;
             margin-left: 5px;
@@ -69,9 +69,27 @@
             border-style: solid;
         }  
       }
+
+      #carouselAltasCumbres{
+        .carousel-inner{
+          .carousel-item{
+            img {
+              @include sizes(200px, 150px);
+              text-align: left;
+              margin: 10px;
+              padding: 0px;
+              border-radius: 10px;
+              position: relative;
+              left: 36px;
+              color: black;
+              border-style: solid;
+          }
+          }
+        }
+    }
         p{
             color: black;
-            font-size: 7px;
+            font-size: 10px;
             text-align: center;
             margin: 10px;
             margin-top: 15px;
@@ -79,7 +97,7 @@
         }
         h2{
             text-align: center;
-            font-size: 15px;
+            font-size: 18px;
             margin-top: 0px;
             font: $title-font;
             background-color: rgb(236, 236, 236);
@@ -87,23 +105,23 @@
         
         h3 {
             text-align: center;
-            font-size: 10px;
+            font-size: 15px;
             font: $title-font;
             margin-top: 10px;
             text-shadow: 
-            0 0 1px #fff, /* Capa base blanca */
-            0 0 5px #fff, /* Aumento de tamaño y color */
-            0 0 10px #08f, /* Color principal del neón */
+            0 0 1px #fff, 
+            0 0 5px #fff, 
+            0 0 10px #08f, 
           }
           ul {
             list-style-type: none;
           }
           li {
             list-style-type: none;
-            font-size: 10px;
+            font-size: 8px;
           }
           .icons {
-            @include sizes(20px, 20px);
+            @include sizes(18px, 18px);
             position: relative;
             left: 0px;
             margin: 0%;
@@ -144,14 +162,14 @@
                 border-radius: 5px;
                 font-size: 10px;
               }
-              @keyframes moverAuto {
+              @keyframes moverAvion {
 
                 100%{
                   transform: translateX(400px);
                 }
               }
               
-              @keyframes moverEquipaje {
+              @keyframes moverPersonas {
                 0%{
                   transform: rotate(-5deg);
                 }
@@ -162,22 +180,22 @@
                   transform: translateX(5deg);
                 }   
               }
-              .icons-auto{
-                animation-name: moverAuto;
+              .icons-avion{
+                animation-name: moverAvion;
                 animation-duration: 10s;
                 animation-iteration-count: infinite;
                 animation-timing-function: linear;  
-              position: fixed;
+              position: absolute;
               bottom: 350px;
               left: 150px;
               width: 75px;
               height: 40px;
               }
-              .icons-equipaje{
-                animation-name: moverEquipaje;
+              .icons-personas{
+                animation-name: moverPersonas;
                 animation-duration: 15s;
                 animation-iteration-count:infinite;
-              position: fixed;
+              position:absolute;
               bottom: 210px;
               left: 200px;
               width: 150px;
@@ -193,13 +211,13 @@
             position: relative;
             bottom: 0px;
             video{
-                @include sizes(180px, 100px);
+                @include sizes(200px, 120px);
                 position: relative;
                 right: 10px;
                 bottom: 50px;
                 left: 0px;
                 top: 1px;
-                margin: 5px;
+                margin: 6px;
                 border-radius: 10px;
             }
             h3{
@@ -207,8 +225,8 @@
                 bottom: 20px;
                 left: 0px;
                 right: 50px;
-                font-size: 8px;
-                top: 5px;
+                font-size: 10px;
+                top: 0px;
             }
             li{
               :hover {transform: scale(1.1);
@@ -232,14 +250,14 @@
                 margin: 20px;
                 border-style: solid;
                 border-radius: 10px;
-                @include sizes(90px, 80px);
+                @include sizes(95px, 85px);
                 display: grid;
                 justify-content: center;
                 flex-wrap: wrap;
-                font-size: 8px;
+                font-size: 9px;
               }
               .card-nosotros {
-                @include sizes(75px, 55px);
+                @include sizes(80px, 60px);
                 text-align: left;
                 position: relative;
                 bottom: 20px;
