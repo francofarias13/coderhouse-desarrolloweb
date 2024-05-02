@@ -1,268 +1,304 @@
 /* Tablet */
-@media screen and (min-width: 501px) and (max-width: 960px){
-    header{
-
-        h1{
-            background-color: black;
-            color: aliceblue;
-            font-size: 30px;
-            width: 100%;
-            text-align: left;
-            display: flex;
-            align-items: center;
-            font: $title-font;
-        }
-        .menu-principal{
-            img{
-                background-color: rgb(0, 0, 0);
-                width: 40px;
-                height: 40px;
-                position: relative;
-                left: 0px;
-                margin: 5px;
-            }
-        }
-        nav {
-            text-align: right;
-            background-color: black;
-            width: 100%;
-          
-        a {
-            font-size: 12px;
-            text-decoration: none;
-            color: black;
-            margin-left: 5px;
-            margin-right: 5px;
-            font: $title-font;
-            text-align: right;
-          }
-        }
-        .link{
-            a{
-                background-color: rgb(197, 207, 201);
-                border-radius: 2px;
-                padding: 1px;
-                margin: 5px;
-                :hover {
-                    background-color: rgb(252, 252, 252);
-                    color: rgb(0, 0, 0);
-                  }            
-            }
-        }
+@media screen and (min-width: 501px) and (max-width: 960px) {
+  header {
+    h1 {
+      background-color: black;
+      color: aliceblue;
+      font-size: 30px;
+      width: 100%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      font: $title-font;
     }
-    main{
-        .pag-inicio{
-            h2{
-                position: relative;
-                top: 0px;
-            }
-        }
-        .carousel-inner{
-        img {
-            @include sizes(450px, 300px);
-            margin: 10px;
-            padding: 0px;
-            border-radius: 10px;
-            position: relative;
-            left: 75px;
-            color: black;
-            border-style: solid;
-            border-radius: 10px;
-          }  
-        }
-        p{
-            color: black;
-            font-size: 13px;
-            text-align: center;
-            margin: 30px;
-            margin-top: 20px;
-            font: $title-font;
-        }
-        h2{
-            text-align: center;
-            font-size: 21px;
-            margin-top: 0px;
-            font: $title-font;
-            background-color: rgb(236, 236, 236);
-              }
-        
-        h3 {
-          font-size: 18px;
-            text-align: center;
-            margin-top: 10px;
-            font: $title-font;
-            text-shadow: 
-            0 0 5px #fff, /* Capa base blanca */
-            0 0 10px #fff, /* Aumento de tamaño y color */
-            0 0 15px #08f, /* Color principal del neón */
-          }
-          ul {
-            list-style-type: none;
-          }
-          li {
-            list-style-type: none;
-            font-size: 13px;
-          }
-          .icons {
-            @include sizes(25px, 25px);
-            position: relative;
-            left: 0px;
-            margin: 0%;
-            padding: 0%;
-          }
-          iframe {
-            @include sizes(60px, 50px);
-            position: relative;
-            left: 0px;
-            top: 20px;
-            border-radius: 10%;
-          }
-          
-          .contacto-config{
-            p{
-                text-align: left;
-                margin-top: 15px;
-                margin-bottom: 10px;
-                font-size: 13px;
-            }
-            input {
-                border-radius: 5px;
-                text-align: center;
-                font-size: 13px;
-              }
-              label {
-                margin-left: 30px;
-                border-radius: 5px;
-                font-size: 13px;
-              }
-              #opciones {
-                margin-left: 30px;
-                border-radius: 5px;
-                font-size: 13px;
-              }
-              textarea {
-                margin-left: 30px;
-                border-radius: 5px;
-                font-size: 13px;
-              }
-              @keyframes moverAvion {
-
-                100%{
-                  transform: translateX(350px);
-                }
-              }
-              
-              @keyframes moverPersonas {
-                0%{
-                  transform: rotate(-5deg);
-                }
-                50%{
-                  transform: rotate(10deg);
-                }
-                100%{
-                  transform: translateX(5deg);
-                }   
-              }
-              .icons-avion{
-                animation-name: moverAvion;
-                animation-duration: 5s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;  
-              position: relative;
-              bottom: 500px;
-              left: 0px;
-              width: 100px;
-              height: 55px;
-              }
-              .icons-personas{
-                animation-name: moverPersonas;
-                animation-duration: 15s;
-                animation-iteration-count:infinite;
-              position: relative;
-              bottom: 300px;
-              left: 400px;
-              width: 300px;
-              height: 200px;
-            }
-          }
-
-          .videos-conf{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 10px;
-            padding: 10px;
-            position: relative;
-            bottom: 0px;
-            video{
-                @include sizes(270px, 165px);
-                position: relative;
-                bottom: 30px;
-                left: -1px;
-                margin: 20px;
-                border-radius: 10px;
-            }
-            h3{
-                position: relative;
-                bottom: 10px;
-                left: 0px;
-                right: 50px;
-            }
-            li{
-                color: black;
-                background-color: white;
-                margin: 10px;
-                border-style: solid;
-                border-radius: 10px;
-                @include sizes(309px, 197px);
-              :hover {transform: scale(1.1);
-              transition: 1s;
-                }
-            }
-        }
-        .card{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            :hover {
-              transform: scale(1.1);
-              transition: 1s;
-            }
-        
-              p{
-                color: black;
-                background-color: white;
-                margin: 20px;
-                border-style: solid;
-                border-radius: 10px;
-                @include sizes(200px, 160px);
-                display: grid;
-                justify-content: center;
-                flex-wrap: wrap;
-                font-size: 15px;
-              }
-              .card-nosotros {
-                @include sizes(160px, 115px);
-                text-align: left;
-                position: relative;
-                bottom: 15px;
-                left: 0px;
-                margin: 20px;
-                padding: 10px;
-                border-radius: 20px;
-              }
-        }
+    .menu-principal {
+      img {
+        background-color: rgb(0, 0, 0);
+        width: 40px;
+        height: 40px;
+        position: relative;
+        left: 0px;
+        margin: 5px;
+        border-radius: 4px;
+      }
     }
-    footer {
+    nav {
+      text-align: right;
+      background-color: black;
+      width: 100%;
+
+      a {
+        font-size: 12px;
+        text-decoration: none;
+        color: black;
+        margin-left: 5px;
+        margin-right: 5px;
+        font: $title-font;
+        text-align: right;
+      }
+    }
+    .link {
+      a {
+        background-color: rgb(197, 207, 201);
+        border-radius: 2px;
+        padding: 1px;
+        margin: 5px;
+        :hover {
+          background-color: rgb(252, 252, 252);
+          color: rgb(0, 0, 0);
+        }
+      }
+    }
+  }
+  main {
+    .pag-inicio {
+      h2 {
+        position: relative;
+        top: 0px;
+      }
+    }
+    .carousel-inner {
+      img {
+        @include sizes(450px, 300px);
+        margin: 10px;
+        padding: 0px;
+        border-radius: 10px;
+        position: relative;
+        left: 75px;
+        color: black;
+        border-style: solid;
+        border-radius: 10px;
+      }
+    }
+    p {
+      color: black;
+      font-size: 13px;
       text-align: center;
-      font-size: 10px;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-      background: linear-gradient(to right, #bdc3c7, #2c3e50);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      margin: 30px;
+      margin-top: 20px;
+      font: $title-font;
+    }
+    h2 {
+      text-align: center;
+      font-size: 21px;
+      margin-top: 0px;
+      font: $title-font;
+      background-color: rgb(236, 236, 236);
+    }
+
+    h3 {
+      font-size: 18px;
+      text-align: center;
+      margin-top: 10px;
+      font: $title-font;
+      text-shadow: 0 0 5px #fff, /* Capa base blanca */ 0 0 10px #fff,
+        /* Aumento de tamaño y color */ 0 0 15px #08f; /* Color principal del neón */
+    }
+    ul {
+      list-style-type: none;
+    }
+    li {
+      list-style-type: none;
+      font-size: 13px;
+    }
+    .icons {
+      @include sizes(25px, 25px);
       position: relative;
-      top: 5px;
+      left: 0px;
+      margin: 0%;
+      padding: 0%;
+      color: #000;
+      transition: box-shadow 0.3s ease;
+      :hover {
+        color: #FFD700; /* Oro */
+        box-shadow: 0 0 20px #FFD700; /* Sombra dorada */
+      }
+    }
+    iframe {
+      @include sizes(60px, 50px);
+      position: relative;
+      left: 0px;
+      top: 20px;
+      border-radius: 10%;
+    }
+
+    .contacto-config {
+      p {
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 13px;
+      }
+      input {
+        border-radius: 5px;
+        text-align: center;
+        font-size: 13px;
+      }
+      label {
+        margin-left: 30px;
+        border-radius: 5px;
+        font-size: 13px;
+      }
+      #opciones {
+        margin-left: 30px;
+        border-radius: 5px;
+        font-size: 13px;
+      }
+      textarea {
+        margin-left: 30px;
+        border-radius: 5px;
+        font-size: 13px;
+      }
+      @keyframes moverAvion {
+        100% {
+          transform: translateX(350px);
+        }
+      }
+
+      @keyframes moverPersonas {
+        0% {
+          transform: rotate(-5deg);
+        }
+        50% {
+          transform: rotate(10deg);
+        }
+        100% {
+          transform: translateX(5deg);
+        }
+      }
+      .icons-avion {
+        animation-name: moverAvion;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        position: relative;
+        bottom: 500px;
+        left: 0px;
+        width: 100px;
+        height: 55px;
+      }
+      .icons-personas {
+        animation-name: moverPersonas;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        position: relative;
+        bottom: 300px;
+        left: 400px;
+        width: 300px;
+        height: 200px;
+      }
+    }
+
+    .videos-conf {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 10px;
+      padding: 10px;
+      position: relative;
+      bottom: 0px;
+      video {
+        @include sizes(270px, 165px);
+        position: relative;
+        bottom: 30px;
+        left: -1px;
+        margin: 20px;
+        border-radius: 10px;
+      }
+      h3 {
+        position: relative;
+        bottom: 10px;
+        left: 0px;
+        right: 50px;
+      }
+      li {
+        color: black;
+        background-color: white;
+        margin: 10px;
+        border-style: solid;
+        border-radius: 10px;
+        @include sizes(309px, 197px);
+        :hover {
+          transform: scale(1.1);
+          transition: 1s;
+        }
+      }
+    }
+    .card {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      :hover {
+        transform: scale(1.1);
+        transition: 1s;
+      }
+
+      p {
+        color: black;
+        background-color: white;
+        margin: 20px;
+        border-style: solid;
+        border-radius: 10px;
+        @include sizes(200px, 160px);
+        display: grid;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 15px;
+      }
+      .card-nosotros {
+        @include sizes(167px, 118px);
+        text-align: left;
+        position: relative;
+        bottom: 15px;
+        left: 0px;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 18px;
+      }
+    }
+    .mensaje {
+      .principal {
+        font-size: 40px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .secundario {
+        font-size: 30px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .terciario {
+        font-size: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        bottom: 15px;
+        left: 250px;
+        animation: rotacion 4s infinite linear;
+        @keyframes rotacion {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
   }
+
+  footer {
+    text-align: center;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    top: 5px;
   }
+}

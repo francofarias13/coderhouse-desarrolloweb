@@ -1,284 +1,313 @@
- /* Mobile */
- @media screen and (max-width: 500px){
-    header{
-
-        h1{
-            background-color: black;
-            color: aliceblue;
-            font-size: 20px;
-            width: 100%;
-            text-align: left;
-            display: flex;
-            align-items: center;
-            font: $title-font;
-        }
-        .menu-principal{
-            img{
-                background-color: rgb(0, 0, 0);
-                @include sizes(20px, 20px);
-                position: relative;
-                left: 0px;
-                margin: 5px;
-            }
-        }
-        nav {
-            text-align: right;
-            background-color: black;
-            width: 100%;
-          
-        a {
-            font-size: 10px;
-            text-decoration: none;
-            color: black;
-            margin-left: 5px;
-            margin-right: 5px;
-            font: $title-font;
-          }
-        }
-        .link{
-            a{
-                background-color: rgb(196, 204, 198);
-                border-radius: 2px;
-                padding: 1px;
-                margin: 1px;
-                position: relative;
-                bottom: 3px;
-                :hover {
-                    background-color: rgb(252, 252, 252);
-                    color: rgb(0, 0, 0);
-                  }            
-            }
-        }
+/* Mobile */
+@media screen and (max-width: 500px) {
+  header {
+    h1 {
+      background-color: black;
+      color: aliceblue;
+      font-size: 20px;
+      width: 100%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      font: $title-font;
     }
-    main{
-        .pag-inicio{
-            h2{
-                position: relative;
-                top: 0px;
-            }
+    .menu-principal {
+      img {
+        background-color: rgb(0, 0, 0);
+        @include sizes(20px, 20px);
+        position: relative;
+        left: 0px;
+        margin: 5px;
+        border-radius: 2px;
+      }
+    }
+    nav {
+      text-align: right;
+      background-color: black;
+      width: 100%;
+
+      a {
+        font-size: 10px;
+        text-decoration: none;
+        color: black;
+        margin-left: 5px;
+        margin-right: 5px;
+        font: $title-font;
+      }
+    }
+    .link {
+      a {
+        background-color: rgb(196, 204, 198);
+        border-radius: 2px;
+        padding: 1px;
+        margin: 1px;
+        position: relative;
+        bottom: 3px;
+        :hover {
+          background-color: rgb(252, 252, 252);
+          color: rgb(0, 0, 0);
         }
-        .carousel-inner{
-        img {
+      }
+    }
+  }
+  main {
+    .pag-inicio {
+      h2 {
+        position: relative;
+        top: 0px;
+      }
+    }
+    .carousel-inner {
+      img {
+        @include sizes(200px, 150px);
+        text-align: left;
+        margin: 10px;
+        padding: 0px;
+        border-radius: 10px;
+        position: relative;
+        left: 40px;
+        color: black;
+        border-style: solid;
+      }
+    }
+
+    #carouselAltasCumbres {
+      .carousel-inner {
+        .carousel-item {
+          img {
             @include sizes(200px, 150px);
             text-align: left;
             margin: 10px;
             padding: 0px;
             border-radius: 10px;
             position: relative;
-            left: 40px;
+            left: 36px;
             color: black;
             border-style: solid;
-        }  
+          }
+        }
+      }
+    }
+    p {
+      color: black;
+      font-size: 10px;
+      text-align: center;
+      margin: 10px;
+      margin-top: 15px;
+      font: $title-font;
+    }
+    h2 {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 0px;
+      font: $title-font;
+      background-color: rgb(236, 236, 236);
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 15px;
+      font: $title-font;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 10px #08f;
+    }
+    ul {
+      list-style-type: none;
+    }
+    li {
+      list-style-type: none;
+      font-size: 8px;
+    }
+    .icons {
+      @include sizes(18px, 18px);
+      position: relative;
+      left: 0px;
+      margin: 0%;
+      padding: 0%;
+    }
+    iframe {
+      @include sizes(60px, 40px);
+      position: relative;
+      left: 0px;
+      top: 15px;
+      border-radius: 10%;
+    }
+
+    .contacto-config {
+      p {
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 10px;
+      }
+      input {
+        border-radius: 5px;
+        text-align: center;
+        font-size: 10px;
+      }
+      label {
+        margin-left: 30px;
+        border-radius: 5px;
+        font-size: 10px;
+      }
+      #opciones {
+        margin-left: 30px;
+        border-radius: 5px;
+        font-size: 10px;
+      }
+      textarea {
+        margin-left: 30px;
+        border-radius: 5px;
+        font-size: 10px;
+      }
+      @keyframes moverAvion {
+        100% {
+          transform: translateX(145px);
+        }
       }
 
-      #carouselAltasCumbres{
-        .carousel-inner{
-          .carousel-item{
-            img {
-              @include sizes(200px, 150px);
-              text-align: left;
-              margin: 10px;
-              padding: 0px;
-              border-radius: 10px;
-              position: relative;
-              left: 36px;
-              color: black;
-              border-style: solid;
-          }
-          }
+      @keyframes moverPersonas {
+        0% {
+          transform: rotate(-5deg);
         }
+        50% {
+          transform: rotate(10deg);
+        }
+        100% {
+          transform: translateX(5deg);
+        }
+      }
+      .icons-avion {
+        animation-name: moverAvion;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        position: relative;
+        bottom: 380px;
+        left: 0px;
+        width: 75px;
+        height: 40px;
+      }
+      .icons-personas {
+        animation-name: moverPersonas;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        position: relative;
+        bottom: 300px;
+        left: 200px;
+        width: 150px;
+        height: 100px;
+      }
     }
-        p{
-            color: black;
-            font-size: 10px;
-            text-align: center;
-            margin: 10px;
-            margin-top: 15px;
-            font: $title-font;
-        }
-        h2{
-            text-align: center;
-            font-size: 18px;
-            margin-top: 0px;
-            font: $title-font;
-            background-color: rgb(236, 236, 236);
-              }
-        
-        h3 {
-            text-align: center;
-            font-size: 15px;
-            font: $title-font;
-            margin-top: 10px;
-            text-shadow: 
-            0 0 1px #fff, 
-            0 0 5px #fff, 
-            0 0 10px #08f, 
-          }
-          ul {
-            list-style-type: none;
-          }
-          li {
-            list-style-type: none;
-            font-size: 8px;
-          }
-          .icons {
-            @include sizes(18px, 18px);
-            position: relative;
-            left: 0px;
-            margin: 0%;
-            padding: 0%;
-          }
-          iframe {
-            @include sizes(60px, 40px);
-            position: relative;
-            left: 0px;
-            top: 15px;
-            border-radius: 10%;
-          }
-          
-          .contacto-config{
-            p{
-                text-align: left;
-                margin-top: 20px;
-                margin-bottom: 10px;
-                font-size: 10px;
-            }
-            input {
-                border-radius: 5px;
-                text-align: center;
-                font-size: 10px;
-              }
-              label {
-                margin-left: 30px;
-                border-radius: 5px;
-                font-size: 10px;
-              }
-              #opciones {
-                margin-left: 30px;
-                border-radius: 5px;
-                font-size: 10px;
-              }
-              textarea {
-                margin-left: 30px;
-                border-radius: 5px;
-                font-size: 10px;
-              }
-              @keyframes moverAvion {
-
-                100%{
-                  transform: translateX(145px);
-                }
-              }
-              
-              @keyframes moverPersonas {
-                0%{
-                  transform: rotate(-5deg);
-                }
-                50%{
-                  transform: rotate(10deg);
-                }
-                100%{
-                  transform: translateX(5deg);
-                }   
-              }
-              .icons-avion{
-                animation-name: moverAvion;
-                animation-duration: 5s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;  
-              position: relative;
-              bottom: 380px;
-              left: 0px;
-              width: 75px;
-              height: 40px;
-              }
-              .icons-personas{
-                animation-name: moverPersonas;
-                animation-duration: 15s;
-                animation-iteration-count:infinite;
-              position:relative;
-              bottom: 300px;
-              left: 200px;
-              width: 150px;
-              height: 100px;
-            }
-          }
-           .videos-conf{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 0px;
-            padding: 0px;
-            position: relative;
-            bottom: 0px;
-            video{
-                @include sizes(200px, 120px);
-                position: relative;
-                right: 10px;
-                bottom: 50px;
-                left: 0px;
-                top: 1px;
-                margin: 6px;
-                border-radius: 10px;
-            }
-            h3{
-                position: relative;
-                bottom: 20px;
-                left: 0px;
-                right: 50px;
-                font-size: 10px;
-                top: 0px;
-            }
-            li{
-              :hover {transform: scale(1.1);
-              transition: 1s;
-                }
-            }
-        }
-
-        .card{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            :hover {
-              transform: scale(1.1);
-              transition: 1s;
-            }
-        
-              p{
-                color: black;
-                background-color: white;
-                margin: 20px;
-                border-style: solid;
-                border-radius: 10px;
-                @include sizes(95px, 85px);
-                display: grid;
-                justify-content: center;
-                flex-wrap: wrap;
-                font-size: 9px;
-              }
-              .card-nosotros {
-                @include sizes(80px, 60px);
-                text-align: left;
-                position: relative;
-                bottom: 20px;
-                left: 0px;
-                margin: 20px;
-                padding: 10px;
-                border-radius: 20px;
-              }
-        }
-    }
-    footer {
-      text-align: center;
-      font-size: 7px;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-      background: linear-gradient(to right, #bdc3c7, #2c3e50);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+    .videos-conf {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0px;
+      padding: 0px;
       position: relative;
-      top: 10px;
+      bottom: 0px;
+      video {
+        @include sizes(200px, 120px);
+        position: relative;
+        right: 10px;
+        bottom: 50px;
+        left: 0px;
+        top: 1px;
+        margin: 6px;
+        border-radius: 10px;
+      }
+      h3 {
+        position: relative;
+        bottom: 20px;
+        left: 0px;
+        right: 50px;
+        font-size: 10px;
+        top: 0px;
+      }
+      li {
+        :hover {
+          transform: scale(1.1);
+          transition: 1s;
+        }
+      }
+    }
+
+    .card {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      :hover {
+        transform: scale(1.1);
+        transition: 1s;
+      }
+
+      p {
+        color: black;
+        background-color: white;
+        margin: 10px;
+        border-style: solid;
+        border-radius: 10px;
+        @include sizes(115px, 105px);
+        display: grid;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 9px;
+      }
+      .card-nosotros {
+        @include sizes(96px, 80px);
+        text-align: left;
+        position: relative;
+        bottom: 20px;
+        left: 0px;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 15px;
+      }
+    }
+
+    .mensaje {
+      .principal {
+        font-size: 30px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .secundario {
+        font-size: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .terciario {
+        font-size: 10px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 130px;
+        animation: rotacion 4s infinite linear;
+        @keyframes rotacion {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
   }
+  footer {
+    text-align: center;
+    font-size: 7px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    top: 10px;
   }
+}

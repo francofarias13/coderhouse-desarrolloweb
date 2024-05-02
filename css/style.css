@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables */
 /* mixin */
 * {
@@ -164,6 +165,7 @@ main .contacto-config textarea {
     position: relative;
     left: 0px;
     margin: 5px;
+    border-radius: 5px;
   }
   header nav {
     text-align: right;
@@ -227,7 +229,7 @@ main .contacto-config textarea {
     margin-top: 30px;
     font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: 20px;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #08f;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #08f; /* Color principal del neón */
   }
   main ul {
     list-style-type: none;
@@ -370,15 +372,43 @@ main .contacto-config textarea {
     font-size: 20px;
   }
   main .card .card-nosotros {
-    width: 200px;
-    height: 140px;
+    width: 199px;
+    height: 152px;
     text-align: left;
     position: relative;
     bottom: 0px;
     left: 0px;
     margin: 20px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 19px;
+  }
+  main .mensaje .principal {
+    font-size: 50px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main .mensaje .secundario {
+    font-size: 40px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main .mensaje .terciario {
+    font-size: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main .mensaje img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 15px;
+    left: 650px;
+    animation: rotacion 4s infinite linear;
+  }
+  @keyframes rotacion {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
   footer {
     text-align: center;
@@ -411,6 +441,7 @@ main .contacto-config textarea {
     position: relative;
     left: 0px;
     margin: 5px;
+    border-radius: 4px;
   }
   header nav {
     text-align: right;
@@ -472,7 +503,7 @@ main .contacto-config textarea {
     text-align: center;
     margin-top: 10px;
     font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #08f;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #08f; /* Color principal del neón */
   }
   main ul {
     list-style-type: none;
@@ -488,6 +519,12 @@ main .contacto-config textarea {
     left: 0px;
     margin: 0%;
     padding: 0%;
+    color: #000;
+    transition: box-shadow 0.3s ease;
+  }
+  main .icons :hover {
+    color: #FFD700; /* Oro */
+    box-shadow: 0 0 20px #FFD700; /* Sombra dorada */
   }
   main iframe {
     width: 60px;
@@ -620,15 +657,43 @@ main .contacto-config textarea {
     font-size: 15px;
   }
   main .card .card-nosotros {
-    width: 160px;
-    height: 115px;
+    width: 167px;
+    height: 118px;
     text-align: left;
     position: relative;
     bottom: 15px;
     left: 0px;
     margin: 20px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 18px;
+  }
+  main .mensaje .principal {
+    font-size: 40px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main .mensaje .secundario {
+    font-size: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main .mensaje .terciario {
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main .mensaje img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 15px;
+    left: 250px;
+    animation: rotacion 4s infinite linear;
+  }
+  @keyframes rotacion {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
   footer {
     text-align: center;
@@ -662,6 +727,7 @@ main .contacto-config textarea {
     position: relative;
     left: 0px;
     margin: 5px;
+    border-radius: 2px;
   }
   header nav {
     text-align: right;
@@ -735,7 +801,8 @@ main .contacto-config textarea {
     text-align: center;
     font-size: 15px;
     font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 10px #08f;
   }
   main ul {
@@ -868,26 +935,53 @@ main .contacto-config textarea {
   main .card p {
     color: black;
     background-color: white;
-    margin: 20px;
+    margin: 10px;
     border-style: solid;
     border-radius: 10px;
-    width: 95px;
-    height: 85px;
+    width: 115px;
+    height: 105px;
     display: grid;
     justify-content: center;
     flex-wrap: wrap;
     font-size: 9px;
   }
   main .card .card-nosotros {
-    width: 80px;
-    height: 60px;
+    width: 96px;
+    height: 80px;
     text-align: left;
     position: relative;
     bottom: 20px;
     left: 0px;
     margin: 20px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 15px;
+  }
+  main .mensaje .principal {
+    font-size: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main .mensaje .secundario {
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main .mensaje .terciario {
+    font-size: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  main .mensaje img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 130px;
+    animation: rotacion 4s infinite linear;
+  }
+  @keyframes rotacion {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
   footer {
     text-align: center;

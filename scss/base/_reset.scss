@@ -1,6 +1,6 @@
 /* Variables */
 $title-font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
 /* mixin */
 @mixin sizes($width, $height) {
@@ -9,16 +9,16 @@ $title-font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 }
 
 * {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    height: 100vh;
-    margin: 0;
-    background: linear-gradient(to bottom, lightblue, white, lightblue);
-  }
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, lightblue, white, lightblue);
+}
 
-  #videoprincipal {
-    width: 100%;
-  }
+#videoprincipal {
+  width: 100%;
+}
